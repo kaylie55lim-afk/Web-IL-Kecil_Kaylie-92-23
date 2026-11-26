@@ -3044,7 +3044,7 @@ html {
     grid-template-columns: 0.9fr 1.1fr;
     gap: 50px;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 35px;
     padding: 35px;
     background: #eaf2e7;
     border-radius: 30px;
@@ -4162,4 +4162,160 @@ html {
         font-size: 12px;
         padding: 10px 13px;
     }
+}
+/* ============================
+   FIX SDG CAROUSEL
+============================ */
+
+.sdg-goals-container {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 50px 40px;
+    align-items: center;
+
+    scroll-snap-type: x proximity;
+    scroll-behavior: auto;
+
+    scrollbar-width: thin;
+    scrollbar-color: #A88DBF #E8DDF0;
+
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+}
+
+.sdg-goal-card {
+    flex: 0 0 420px;
+    scroll-snap-align: center;
+
+    /* Hilangkan animasi ukuran yang berat */
+    animation: none !important;
+    transform: none;
+    transition: transform 0.25s ease;
+}
+
+.sdg-goal-card:hover {
+    transform: scale(1.03);
+}
+
+@media screen and (max-width: 700px) {
+    .sdg-goals-container {
+        gap: 15px;
+        padding: 35px 20px;
+    }
+
+    .sdg-goal-card {
+        flex: 0 0 82%;
+    }
+}
+#sdg12-pengenalan {
+    scroll-margin-top: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* X LIST CHECKBOX */
+.sdg12-check input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 21px;
+    height: 21px;
+    min-width: 21px;
+    border: 2px solid #c9a6dc;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: 0.2s ease;
+}
+
+/* Saat dipilih */
+.sdg12-check input[type="checkbox"]:checked {
+    background: #c58bdc;
+    border-color: #c58bdc;
+}
+
+/* Tanda X */
+.sdg12-check input[type="checkbox"]:checked::after {
+    content: "×";
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+/* Efek hover */
+.sdg12-check input[type="checkbox"]:hover {
+    border-color: #a66bc5;
+}
+
+/* Footer disembunyikan sebelum 3 pilihan */
+.sdg12-check-panel .sdg12-check-footer {
+    display: none !important;
+}
+
+/* Footer muncul setelah 3 pilihan */
+.sdg12-check-panel .sdg12-check-footer.show {
+    display: flex !important;
+    animation: checkFooterAppear 0.4s ease;
+}
+
+@keyframes checkFooterAppear {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* SDGs QUOTE - WIDE & FLAT */
+.sdg-quote {
+    background: linear-gradient(110deg, #eee5fa, #fff0e5);
+    padding: 18px 45px;
+    margin: 0 auto 35px;
+    width: 100%;
+    max-width: 1100px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.sdg-quote-label {
+    display: block;
+    color: #ad6d9d;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.sdg-quote i {
+    display: none;
+}
+
+.sdg-quote h2 {
+    color: #49366c;
+    font-size: 24px;
+    line-height: 1.4;
+    max-width: 950px;
+    margin: 0 auto 5px;
+}
+
+.sdg-quote-translation {
+    color: #766b82;
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0 auto 5px;
+}
+
+.sdg-quote-author {
+    color: #ad6d9d;
+    font-size: 12px;
+    font-weight: 700;
 }
