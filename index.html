@@ -1,0 +1,3149 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Building a Better World</title>
+
+    <link rel="stylesheet" href="Web_IL_Kecil.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <img src="header.png" alt="Header Background">
+    </div>
+
+
+    <!-- NAVIGATOR -->
+    <nav class="topnav">
+
+        <button class="active" onclick="showPage('beranda', this)">
+            HOME
+        </button>
+
+    <div class="dropdown">
+
+    <button class="dropbtn" onclick="toggleIPSMenu(event)">
+        PEMBANGUNAN <span></span>
+    </button>
+
+    <div class="dropdown-content">
+          <a href="#pengertian" onclick="scrollIPS('pengertian', event)">
+            Konsep Pembangunan
+        </a>
+
+        <a href="#indikator" onclick="scrollIPS('indikator', event)">
+            Indikator & Dampak
+        </a>
+
+        <a href="#berkelanjutan" onclick="scrollIPS('berkelanjutan', event)">
+            SDGs & Pembangunan Berkelanjutan
+        </a>
+
+        <a href="#prototype" onclick="scrollIPS('prototype', event)">
+            Prototype
+        </a>
+    </div>
+
+</div>
+
+      <div class="dropdown sdg12-dropdown">
+
+    <button id="sdg12NavButton" onclick="showPage('sdg12', this)">
+        SDG 12
+        <span></span>
+    </button>
+
+    <div class="dropdown-content">
+
+        <a href="#sdg12-pengenalan"
+           onclick="scrollSDG12('sdg12-pengenalan', event)">
+            Mengenal SDG 12
+        </a>
+
+        <a href="#sdg12-masalah"
+           onclick="scrollSDG12('sdg12-masalah', event)">
+            Permasalahan
+        </a>
+
+        <a href="#sdg12-solusi"
+           onclick="scrollSDG12('sdg12-solusi', event)">
+            Solusi
+        </a>
+
+        <a href="#sdg12-aksi"
+           onclick="scrollSDG12('sdg12-aksi', event)">
+            Pancasila & Aksi Nyata
+        </a>
+
+    </div>
+</div>
+</div>
+
+        <button onclick="showPage('kerjasama', this)">
+            KERJASAMA DUNIA
+        </button>
+
+        <button onclick="showPage('tentang saya', this)">
+            CONTACT ME
+        </button>
+
+       <button onclick="showPage('daftar-pustaka', this)">
+    DAFTAR PUSTAKA
+</button>
+
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+
+       
+<!-- HALAMAN BERANDA -->
+<section id="beranda" class="page">
+
+    <!-- SDGs LIVE COUNTDOWN -->
+<div class="sdgs-timer">
+
+    <p class="timer-label">THE GLOBAL GOALS JOURNEY</p>
+
+    <h1>15 YEARS TO CHANGE THE WORLD.</h1>
+
+    <p class="timer-desc">
+        Since the Sustainable Development Goals were adopted
+        on September 25, 2015.
+    </p>
+
+    <!-- LIVE COUNTER -->
+    <div class="timer-container">
+
+        <div class="timer-box">
+            <span id="seconds">00</span>
+            <p>SECONDS</p>
+        </div>
+
+        <div class="timer-box">
+            <span id="hours">00</span>
+            <p>HOURS</p>
+        </div>
+
+        <div class="timer-box">
+            <span id="years">0</span>
+            <p>YEARS</p>
+        </div>
+
+        <div class="timer-box">
+            <span id="days">0</span>
+            <p>DAYS</p>
+        </div>
+
+    </div>
+
+    <!-- PROGRESS BAR -->
+    <div class="sdgs-progress">
+
+        <div class="progress-heading">
+            <span>PROGRESS TOWARDS 2030</span>
+            <span id="progress-percent">0%</span>
+        </div>
+
+        <div class="progress-bar">
+            <div id="progress-fill"></div>
+        </div>
+
+        <p id="progress-caption">
+            Every second counts. Every action matters.
+        </p>
+
+    </div>
+
+    <p class="timer-footer">
+        SEPTEMBER 25, 2015 — DECEMBER 31, 2030
+    </p>
+
+
+    </div>
+    <!-- 17 PROGRAM SDGs -->
+<div class="sdg-section">
+
+    <h1>17 Sustainable Development Goals</h1>
+
+    <p class="sdg-intro">
+        Kenali 17 tujuan SDGs dan contoh penerapannya
+        dalam kehidupan sehari-hari!
+    </p>
+
+    <!-- TEMPAT 17 CARD SDGs -->
+    <div class="sdg-goals-container">
+
+            <!-- SDG 1 -->
+            <div class="sdg-goal-card">
+                <h3>01. TANPA KEMISKINAN</h3>
+                <div class="sdg-slide">
+                    <div class="sdg-image first-image">
+                        <img src="sdg 1.png" alt="Logo SDG 1">
+                        <div class="sdg-overlay">
+                            <h4>TANPA KEMISKINAN</h4>
+                            <p>Mengakhiri kemiskinan dalam segala bentuk di seluruh dunia.</p>
+                        </div>
+                    </div>
+                    <div class="sdg-image second-image">
+                        <img src="kemiskinan.jpg" alt="Contoh SDG 1">
+                        <div class="sdg-overlay">
+                            <h4>TANPA KEMISKINAN</h4>
+                            <p>Membantu masyarakat mendapatkan kebutuhan dasar dan kehidupan yang layak.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 2 -->
+            <div class="sdg-goal-card">
+                <h3>02. TANPA KELAPARAN</h3>
+                <div class="sdg-slide">
+                    <div class="sdg-image first-image">
+                        <img src="sdg 2.png" alt="Logo SDG 2">
+                        <div class="sdg-overlay">
+                            <h4>TANPA KELAPARAN</h4>
+                            <p>Mengakhiri kelaparan, mencapai ketahanan pangan, dan meningkatkan gizi.</p>
+                        </div>
+                    </div>
+                    <div class="sdg-image second-image">
+                        <img src="kelaparan.jpg" alt="Contoh SDG 2">
+                        <div class="sdg-overlay">
+                            <h4>TANPA KELAPARAN</h4>
+                            <p>Mengurangi sampah makanan dan membantu orang yang membutuhkan makanan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 3 -->
+            <div class="sdg-goal-card">
+                <h3>03. KEHIDUPAN SEHAT DAN SEJAHTERA</h3>
+                <div class="sdg-slide">
+                    <div class="sdg-image first-image">
+                        <img src="sdg 3.png" alt="Logo SDG 3">
+                        <div class="sdg-overlay">
+                            <h4>KEHIDUPAN SEHAT DAN SEJAHTERA</h4>
+                            <p>Menjamin kehidupan yang sehat dan meningkatkan kesejahteraan semua orang.</p>
+                        </div>
+                    </div>
+                    <div class="sdg-image second-image">
+                        <img src="kesehatan.jpg" alt="Contoh SDG 3">
+                        <div class="sdg-overlay">
+                            <h4>KEHIDUPAN SEHAT DAN SEJAHTERA</h4>
+                            <p>Menjaga kesehatan dengan berolahraga dan mendapatkan layanan kesehatan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 4 -->
+            <div class="sdg-goal-card">
+                <h3>04. PENDIDIKAN BERKUALITAS</h3>
+                <div class="sdg-slide">
+                    <div class="sdg-image first-image">
+                        <img src="sdg 4.png" alt="Logo SDG 4">
+                        <div class="sdg-overlay">
+                            <h4>PENDIDIKAN BERKUALITAS</h4>
+                            <p>Menjamin pendidikan yang inklusif, adil, dan berkualitas.</p>
+                        </div>
+                    </div>
+                    <div class="sdg-image second-image">
+                        <img src="pendidikan.jpg" alt="Contoh SDG 4">
+                        <div class="sdg-overlay">
+                            <h4>PENDIDIKAN BERKUALITAS</h4>
+                            <p>Memberikan kesempatan belajar yang sama bagi semua anak.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 5 -->
+            <div class="sdg-goal-card">
+                <h3>05. KESETARAAN GENDER</h3>
+                <div class="sdg-slide">
+                    <div class="sdg-image first-image">
+                        <img src="sdg 5.png" alt="Logo SDG 5">
+                        <div class="sdg-overlay">
+                            <h4>KESETARAAN GENDER</h4>
+                            <p>Mencapai kesetaraan gender dan memberdayakan semua perempuan dan anak perempuan.</p>
+                        </div>
+                    </div>
+                    <div class="sdg-image second-image">
+                        <img src="kesetaraangender.jpg" alt="Contoh SDG 5">
+                        <div class="sdg-overlay">
+                            <h4>KESETARAAN GENDER</h4>
+                            <p>Memberikan kesempatan dan hak yang sama kepada laki-laki dan perempuan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 6 -->
+            <div class="sdg-goal-card">
+                <h3>06. AIR BERSIH DAN SANITASI LAYAK</h3>
+                <div class="sdg-slide">
+                    <div class="sdg-image first-image">
+                        <img src="sdg 6.png" alt="Logo SDG 6">
+                        <div class="sdg-overlay">
+                            <h4>AIR BERSIH DAN SANITASI LAYAK</h4>
+                            <p>Menjamin ketersediaan air bersih dan sanitasi yang layak untuk semua.</p>
+                        </div>
+                    </div>
+                    <div class="sdg-image second-image">
+                        <img src="air bersih.jpg" alt="Contoh SDG 6">
+                        <div class="sdg-overlay">
+                            <h4>AIR BERSIH DAN SANITASI LAYAK</h4>
+                            <p>Menghemat air dan menjaga kebersihan sumber air.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 7 -->
+            <div class="sdg-goal-card">
+                <h3>07. ENERGI BERSIH DAN TERJANGKAU</h3>
+                <div class="sdg-slide">
+                    <div class="sdg-image first-image">
+                        <img src="sdg 7.png" alt="Logo SDG 7">
+                        <div class="sdg-overlay">
+                            <h4>ENERGI BERSIH DAN TERJANGKAU</h4>
+                            <p>Menjamin akses energi yang terjangkau, andal, berkelanjutan, dan modern.</p>
+                        </div>
+                    </div>
+                    <div class="sdg-image second-image">
+                        <img src="energi bersih.jpg" alt="Contoh SDG 7">
+                        <div class="sdg-overlay">
+                            <h4>ENERGI BERSIH DAN TERJANGKAU</h4>
+                            <p>Menggunakan energi terbarukan seperti tenaga surya dan angin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 8 -->
+            <div class="sdg-goal-card">
+                <h3>08. PEKERJAAN LAYAK DAN PERTUMBUHAN EKONOMI</h3>
+                <div class="sdg-slide">
+                    <div class="sdg-image first-image">
+                        <img src="sdg 8.png" alt="Logo SDG 8">
+                        <div class="sdg-overlay">
+                            <h4>PEKERJAAN LAYAK DAN PERTUMBUHAN EKONOMI</h4>
+                            <p>Mendorong pertumbuhan ekonomi yang berkelanjutan dan pekerjaan layak.</p>
+                        </div>
+                    </div>
+                    <div class="sdg-image second-image">
+                        <img src="pertumbuhan ekonomi.jpg" alt="Contoh SDG 8">
+                        <div class="sdg-overlay">
+                            <h4>PEKERJAAN LAYAK DAN PERTUMBUHAN EKONOMI</h4>
+                            <p>Mendukung lingkungan kerja yang aman dan memberikan upah yang layak.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 9 -->
+            <div class="sdg-goal-card">
+                <h3>09. INDUSTRI, INOVASI, DAN INFRASTRUKTUR</h3>
+                <div class="sdg-slide">
+                    <div class="sdg-image first-image">
+                        <img src="sdg 9.png" alt="Logo SDG 9">
+                        <div class="sdg-overlay">
+                            <h4>INDUSTRI, INOVASI, DAN INFRASTRUKTUR</h4>
+                            <p>Membangun infrastruktur yang tangguh serta mendorong inovasi dan industri berkelanjutan.</p>
+                        </div>
+                    </div>
+                    <div class="sdg-image second-image">
+                        <img src="infrastruktur.jpg" alt="Contoh SDG 9">
+                        <div class="sdg-overlay">
+                            <h4>INDUSTRI, INOVASI, DAN INFRASTRUKTUR</h4>
+                            <p>Mengembangkan teknologi baru yang bermanfaat bagi masyarakat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 10 -->
+            <div class="sdg-goal-card">
+                <h3>10. BERKURANGNYA KESENJANGAN</h3>
+                <div class="sdg-slide">
+                    <div class="sdg-image first-image">
+                        <img src="sdg 10.png" alt="Logo SDG 10">
+                        <div class="sdg-overlay">
+                            <h4>BERKURANGNYA KESENJANGAN</h4>
+                            <p>Mengurangi kesenjangan di dalam dan antarnegara.</p>
+                        </div>
+                    </div>
+                    <div class="sdg-image second-image">
+                        <img src="kesenjangan.jpg" alt="Contoh SDG 10">
+                        <div class="sdg-overlay">
+                            <h4>BERKURANGNYA KESENJANGAN</h4>
+                            <p>Memberikan kesempatan yang adil tanpa membedakan latar belakang seseorang.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 11 -->
+            <div class="sdg-goal-card">
+                <h3>11. KOTA DAN PERMUKIMAN YANG BERKELANJUTAN</h3>
+                <div class="sdg-slide">
+                    <div class="sdg-image first-image">
+                        <img src="sdg 11.png" alt="Logo SDG 11">
+                        <div class="sdg-overlay">
+                            <h4>KOTA DAN PERMUKIMAN YANG BERKELANJUTAN</h4>
+                            <p>Menjadikan kota dan permukiman inklusif, aman, tangguh, dan berkelanjutan.</p>
+                        </div>
+                    </div>
+                    <div class="sdg-image second-image">
+                        <img src="pemukiman.jpg" alt="Contoh SDG 11">
+                        <div class="sdg-overlay">
+                            <h4>KOTA DAN PERMUKIMAN YANG BERKELANJUTAN</h4>
+                            <p>Menggunakan transportasi umum dan menjaga kebersihan lingkungan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 12 -->
+            <div class="sdg-goal-card">
+                <h3>12. KONSUMSI DAN PRODUKSI YANG BERTANGGUNGJAWAB</h3>
+                <div class="sdg-slide">
+                    <div class="sdg-image first-image">
+                        <img src="sdg 12.png" alt="Logo SDG 12">
+                        <div class="sdg-overlay">
+                            <h4>KONSUMSI DAN PRODUKSI YANG BERTANGGUNGJAWAB</h4>
+                            <p>Menjamin pola konsumsi dan produksi yang berkelanjutan.</p>
+                        </div>
+                    </div>
+                    <div class="sdg-image second-image">
+                        <img src="konsumsi dan produksi.jpg" alt="Contoh SDG 12">
+                        <div class="sdg-overlay">
+                            <h4>KONSUMSI DAN PRODUKSI YANG BERTANGGUNGJAWAB</h4>
+                            <p>Membeli barang sesuai kebutuhan, menggunakan kembali barang, dan mengurangi sampah.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SDG 13 -->
+            <div class="sdg-goal-card">
+                <h3>13. PENANGGANAN PERUBAHAN IKLIM</h3>
+                <div class="sdg-slide">
+                    <div class="sdg-image first-image">
+                        <img src="sdg 13.png" alt="Logo SDG 13">
+                        <div class="sdg-overlay">
+                            <h4>PENANGGANAN PERUBAHAN IKLIM</h4>
+                            <p>Mengambil tindakan cepat untuk mengatasi perubahan iklim dan dampaknya.</p>
+                        </div>
+                    </div>
+                    <div class="sdg-image second-image">
+                        <img src="iklim.jpg" alt="Contoh SDG 13">
+                        <div class="sdg-overlay">
+                            <h4>PENANGGANAN PERUBAHAN IKLIM</h4>
+                            <p>Menghemat energi dan mengurangi penggunaan kendaraan pribadi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 14 -->
+            <div class="sdg-goal-card">
+                <h3>14. EKOSISTEM LAUTAN</h3>
+                <div class="sdg-slide">
+                    <div class="sdg-image first-image">
+                        <img src="sdg 14.png" alt="Logo SDG 14">
+                        <div class="sdg-overlay">
+                            <h4>EKOSISTEM LAUTAN</h4>
+                            <p>Melestarikan dan memanfaatkan sumber daya laut secara berkelanjutan.</p>
+                        </div>
+                    </div>
+                    <div class="sdg-image second-image">
+                        <img src="lautan.jpg" alt="Contoh SDG 14">
+                        <div class="sdg-overlay">
+                            <h4>EKOSISTEM LAUTAN</h4>
+                            <p>Mengurangi sampah plastik agar tidak mencemari laut.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 15 -->
+            <div class="sdg-goal-card">
+                <h3>15. EKOSISTEM DARATAN</h3>
+                <div class="sdg-slide">
+                    <div class="sdg-image first-image">
+                        <img src="sdg 15.png" alt="Logo SDG 15">
+                        <div class="sdg-overlay">
+                            <h4>EKOSISTEM DARATAN</h4>
+                            <p>Melindungi ekosistem daratan, mengelola hutan, dan menghentikan hilangnya keanekaragaman hayati.</p>
+                        </div>
+                    </div>
+                    <div class="sdg-image second-image">
+                        <img src="daratan.jpg" alt="Contoh SDG 15">
+                        <div class="sdg-overlay">
+                            <h4>EKOSISTEM DARATAN</h4>
+                            <p>Menanam pohon dan menjaga habitat hewan serta tumbuhan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 16 -->
+            <div class="sdg-goal-card">
+                <h3>16. PERDAMAIAN KEADILAN KELEMBAGAAN YANG TANGGUH</h3>
+                <div class="sdg-slide">
+                    <div class="sdg-image first-image">
+                        <img src="sdg 16.png" alt="Logo SDG 16">
+                        <div class="sdg-overlay">
+                            <h4>PERDAMAIAN KEADILAN KELEMBAGAAN YANG TANGGUH</h4>
+                            <p>Mendorong masyarakat yang damai, adil, dan inklusif.</p>
+                        </div>
+                    </div>
+                    <div class="sdg-image second-image">
+                        <img src="keadilan.jpg" alt="Contoh SDG 16">
+                        <div class="sdg-overlay">
+                            <h4>PERDAMAIAN KEADILAN KELEMBAGAAN YANG TANGGUH</h4>
+                            <p>Menghormati hak orang lain dan menyelesaikan masalah secara damai.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDG 17 -->
+            <div class="sdg-goal-card">
+                <h3>17. KEMITRAAN UNTUK MENCAPAI TUJUAN</h3>
+                <div class="sdg-slide">
+                    <div class="sdg-image first-image">
+                        <img src="sdg 17.png" alt="Logo SDG 17">
+                        <div class="sdg-overlay">
+                            <h4>KEMITRAAN UNTUK MENCAPAI TUJUAN</h4>
+                            <p>Memperkuat kerja sama global untuk mencapai pembangunan berkelanjutan.</p>
+                        </div>
+                    </div>
+                    <div class="sdg-image second-image">
+                        <img src="kemitraan.jpg" alt="Contoh SDG 17">
+                        <div class="sdg-overlay">
+                            <h4>KEMITRAAN UNTUK MENCAPAI TUJUAN</h4>
+                            <p>Bekerja sama dengan orang lain untuk menyelesaikan masalah bersama.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+</div>
+
+    <div class="intro-background">
+
+        <h1>Sustainable Development Goals</h1>
+
+        <div class="section-box">
+            <h2>Pengertian SDGs</h2>
+            <p>
+                Sustainable Development Goals (SDGs) merupakan
+                17 tujuan pembangunan berkelanjutan yang dibuat
+                untuk menciptakan dunia yang lebih baik,
+                adil, dan berkelanjutan.
+            </p>
+        </div>
+
+         <div class="section-box">
+            <p>
+                Agenda 2030 untuk Pembangunan Berkelanjutan, yang diadopsi oleh seluruh negara anggota Perserikatan Bangsa-Bangsa pada tahun 2015, menyediakan cetak biru bersama demi perdamaian dan kemakmuran bagi manusia serta planet ini, baik untuk saat ini maupun masa depan. Inti dari agenda ini adalah 17 Tujuan Pembangunan Berkelanjutan (SDGs), yang merupakan seruan mendesak untuk bertindak bagi semua negara—baik negara maju maupun berkembang—dalam sebuah kemitraan global. Agenda ini mengakui bahwa upaya mengakhiri kemiskinan dan berbagai bentuk kekurangan lainnya harus berjalan beriringan dengan strategi untuk meningkatkan kesehatan dan pendidikan, mengurangi kesenjangan, serta memacu pertumbuhan ekonomi—semuanya dilakukan sembari menangani perubahan iklim dan berupaya melestarikan lautan serta hutan kita.
+
+            </p>
+        </div>
+
+        <div class="section-box">
+            <h2>Prinsip Utama SDGs</h2>
+            <p>
+                “No One Left Behind” berarti tidak seorang pun boleh tertinggal. Pembangunan harus menjangkau semua kelompok masyarakat, termasuk penyandang disabilitas, masyarakat miskin, kelompok rentan, serta penduduk di wilayah terpencil. Keberhasilan pembangunan bukan hanya dilihat dari rata-rata nasional, tetapi juga dari siapa yang memperoleh manfaat dan siapa yang masih tertinggal.
+            </p>
+        </div>
+
+</section>
+
+
+
+
+       <!-- HALAMAN IPS -->
+<section id="ips" class="page" hidden>
+
+<!-- ================= HALAMAN IPS ================= -->
+
+<main id="ips-page">
+
+    <!-- HERO -->
+    <section class="ips-hero">
+        <div class="ips-hero-text">
+            <span class="ips-label">ILMU PENGETAHUAN SOSIAL • KELAS IX</span>
+
+            <h1>Pembangunan Berkelanjutan & SDGs</h1>
+
+            <p>
+                Bagaimana cara membangun kehidupan yang lebih baik
+                tanpa merusak lingkungan dan mengurangi kesempatan
+                generasi yang akan datang?
+            </p>
+
+            <a href="#pengertian"
+               class="ips-button"
+               onclick="scrollIPS('pengertian', event)">
+                Mulai Belajar
+                <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="ips-hero-visual">
+            <img src="bumi sdg.png"
+                 alt="Ilustrasi bumi dan pembangunan berkelanjutan">
+        </div>
+    </section>
+
+
+    <!-- SECTION 1: KONSEP PEMBANGUNAN -->
+    <section id="pengertian" class="ips-section">
+
+        <div class="ips-intro-card">
+            <div class="ips-intro-text">
+                <div class="ips-heading">
+                    <span class="ips-icon">
+                        <i data-lucide="building-2"></i>
+                    </span>
+                    <h2>Apa Itu Pembangunan?</h2>
+                </div>
+
+                <p>
+                    Pembangunan adalah usaha yang dilakukan secara sadar
+                    dan terencana untuk meningkatkan kesejahteraan serta
+                    kualitas hidup masyarakat secara bertahap.
+                </p>
+
+                <p>
+                    Pembangunan bukan hanya tentang membangun gedung,
+                    jalan, atau jembatan. Pendidikan, kesehatan, dan
+                    kesejahteraan manusia juga termasuk di dalamnya.
+                </p>
+            </div>
+
+            <div class="ips-photo">
+                <img src="kota.jpg"
+                     alt="Contoh pembangunan kota">
+                <div class="ips-photo-caption">
+                    Contoh pembangunan di wilayah perkotaan
+                </div>
+            </div>
+        </div>
+
+
+        <!-- PEMBANGUNAN FISIK DAN NONFISIK -->
+        <div class="ips-subtitle">
+            <span>01</span>
+            <div>
+                <h2>Bentuk-Bentuk Pembangunan</h2>
+                <p>Pembangunan dapat dibedakan menjadi dua bentuk utama.</p>
+            </div>
+        </div>
+
+        <div class="ips-grid ips-two-columns">
+
+            <article class="ips-card ips-card-purple">
+                <div class="ips-card-image">
+                    <img src="tol.jpg"
+                         alt="Pembangunan jalan dan gedung">
+                </div>
+
+                <div class="ips-card-content">
+                    <span class="ips-icon">
+                        <i data-lucide="construction"></i>
+                    </span>
+                    <h3>Pembangunan Fisik</h3>
+                    <p>
+                        Pembangunan yang hasilnya dapat dilihat secara
+                        langsung atau memiliki bentuk nyata.
+                    </p>
+                    <p class="ips-example">
+                        Contoh: jalan, jembatan, sekolah, rumah sakit,
+                        dan transportasi umum.
+                    </p>
+                </div>
+            </article>
+
+            <article class="ips-card ips-card-pink">
+                <div class="ips-card-image">
+                    <img src="pembelajaran.jpg"
+                         alt="Kegiatan pendidikan dan masyarakat">
+                </div>
+
+                <div class="ips-card-content">
+                    <span class="ips-icon">
+                        <i data-lucide="users"></i>
+                    </span>
+                    <h3>Pembangunan Nonfisik</h3>
+                    <p>
+                        Pembangunan yang berhubungan dengan peningkatan
+                        kualitas manusia dan kehidupan masyarakat.
+                    </p>
+                    <p class="ips-example">
+                        Contoh: pendidikan, kesehatan, keterampilan,
+                        dan kesejahteraan.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+
+        <!-- TUJUAN PEMBANGUNAN -->
+        <div class="ips-subtitle">
+            <span>02</span>
+            <div>
+                <h2>Tujuan Pembangunan</h2>
+                <p>Apa yang ingin dicapai melalui pembangunan?</p>
+            </div>
+        </div>
+
+        <div class="ips-grid ips-four-columns">
+
+            <article class="ips-mini-card ips-card-peach">
+                <i data-lucide="hand-coins"></i>
+                <h3>Mengurangi Kemiskinan</h3>
+                <p>
+                    Membuka lapangan pekerjaan dan meningkatkan
+                    kemandirian ekonomi masyarakat.
+                </p>
+            </article>
+
+            <article class="ips-mini-card ips-card-purple">
+                <i data-lucide="graduation-cap"></i>
+                <h3>Meningkatkan Kualitas SDM</h3>
+                <p>
+                    Meningkatkan pendidikan dan kesehatan masyarakat.
+                </p>
+            </article>
+
+            <article class="ips-mini-card ips-card-pink">
+                <i data-lucide="map-pinned"></i>
+                <h3>Pemerataan Wilayah</h3>
+                <p>
+                    Mengurangi kesenjangan pembangunan antardaerah.
+                </p>
+            </article>
+
+            <article class="ips-mini-card ips-card-green">
+                <i data-lucide="shield-check"></i>
+                <h3>Menciptakan Keamanan</h3>
+                <p>
+                    Mewujudkan kehidupan yang tertib dan hukum yang adil.
+                </p>
+            </article>
+
+        </div>
+
+
+        <!-- FAKTOR PEMBANGUNAN -->
+        <div class="ips-subtitle">
+            <span>03</span>
+            <div>
+                <h2>Faktor yang Memengaruhi Pembangunan</h2>
+                <p>
+                    Keberhasilan pembangunan dipengaruhi oleh berbagai
+                    sumber daya dan kondisi masyarakat.
+                </p>
+            </div>
+        </div>
+
+        <div class="ips-factor-layout">
+
+            <div class="ips-factor-list">
+
+                <article class="ips-factor-item">
+                    <span class="ips-icon">
+                        <i data-lucide="trees"></i>
+                    </span>
+                    <div>
+                        <h3>Sumber Daya Alam</h3>
+                        <p>
+                            Kekayaan alam seperti tanah, air, hutan,
+                            dan hasil tambang yang dapat dimanfaatkan.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="ips-factor-item">
+                    <span class="ips-icon">
+                        <i data-lucide="users-round"></i>
+                    </span>
+                    <div>
+                        <h3>Sumber Daya Manusia</h3>
+                        <p>
+                            Penduduk yang memiliki pengetahuan,
+                            keterampilan, dan kemampuan untuk membangun.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="ips-factor-item">
+                    <span class="ips-icon">
+                        <i data-lucide="coins"></i>
+                    </span>
+                    <div>
+                        <h3>Modal dan Teknologi</h3>
+                        <p>
+                            Dana, alat, mesin, dan teknologi yang
+                            membantu proses pembangunan.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="ips-factor-item">
+                    <span class="ips-icon">
+                        <i data-lucide="handshake"></i>
+                    </span>
+                    <div>
+                        <h3>Sosial dan Budaya</h3>
+                        <p>
+                            Nilai, kebiasaan, budaya, dan kerja sama
+                            masyarakat yang memengaruhi pembangunan.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="ips-factor-photo">
+                <img src="pemandangan.jpg"
+                     alt="Pemandangan alam dan sumber daya alam">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SECTION 2: INDIKATOR DAN DAMPAK -->
+    <section id="indikator" class="ips-section">
+
+        <div class="ips-section-heading">
+            <span class="ips-label">MENGUKUR KEMAJUAN</span>
+            <h2>Indikator Keberhasilan Pembangunan</h2>
+            <p>
+                Bagaimana kita tahu bahwa pembangunan berhasil?
+                Ada beberapa indikator yang dapat digunakan untuk
+                melihat perkembangan suatu negara.
+            </p>
+        </div>
+
+        <div class="ips-indicator-grid">
+
+            <article class="ips-indicator-card ips-card-purple">
+                <i data-lucide="chart-no-axes-combined"></i>
+                <h3>Produk Domestik Bruto (PDB)</h3>
+                <p>
+                    Menunjukkan jumlah nilai barang dan jasa yang
+                    dihasilkan suatu negara dalam periode tertentu.
+                </p>
+            </article>
+
+            <article class="ips-indicator-card ips-card-peach">
+                <i data-lucide="wallet"></i>
+                <h3>Pendapatan Per Kapita</h3>
+                <p>
+                    Menunjukkan rata-rata pendapatan penduduk suatu
+                    negara dan membantu menggambarkan kesejahteraan
+                    ekonominya.
+                </p>
+            </article>
+
+            <article class="ips-indicator-card ips-card-pink">
+                <i data-lucide="heart-pulse"></i>
+                <h3>Indeks Pembangunan Manusia (IPM)</h3>
+                <p>
+                    Mengukur kualitas hidup manusia melalui kesehatan,
+                    pendidikan, dan standar hidup.
+                </p>
+            </article>
+
+        </div>
+
+        <div class="ips-ipm-box">
+            <div>
+                <h3>IPM memiliki tiga dimensi utama</h3>
+                <p>
+                    Ketiganya membantu menunjukkan kualitas hidup
+                    masyarakat secara lebih menyeluruh.
+                </p>
+            </div>
+
+            <div class="ips-ipm-items">
+                <div>
+                    <i data-lucide="heart-pulse"></i>
+                    <h4>Kesehatan</h4>
+                    <p>Umur harapan hidup.</p>
+                </div>
+
+                <div>
+                    <i data-lucide="book-open"></i>
+                    <h4>Pendidikan</h4>
+                    <p>Lama sekolah dan kemampuan membaca.</p>
+                </div>
+
+                <div>
+                    <i data-lucide="house"></i>
+                    <h4>Standar Hidup</h4>
+                    <p>Daya beli masyarakat.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- DAMPAK PEMBANGUNAN -->
+        <div class="ips-subtitle">
+            <span>04</span>
+            <div>
+                <h2>Dampak Pembangunan</h2>
+                <p>
+                    Pembangunan membawa perubahan dalam kehidupan
+                    masyarakat. Namun, dampaknya tidak selalu positif.
+                </p>
+            </div>
+        </div>
+
+        <div class="ips-impact-grid">
+
+            <article class="ips-impact-card ips-impact-positive">
+                <div class="ips-impact-image">
+                    <img src="whoosh.jpg"
+                         alt="Transportasi modern">
+                </div>
+
+                <div class="ips-impact-content">
+                    <span class="ips-impact-tag">Dampak Positif</span>
+                    <h3>Mempermudah Kehidupan</h3>
+                    <ul>
+                        <li>Transportasi menjadi lebih modern.</li>
+                        <li>Membuka lapangan pekerjaan baru.</li>
+                        <li>Akses pendidikan dan kesehatan meningkat.</li>
+                        <li>Standar hidup masyarakat membaik.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="ips-impact-card ips-impact-negative">
+                <div class="ips-impact-image">
+                    <img src="pencemaran.jpg"
+                         alt="Pencemaran lingkungan">
+                </div>
+
+                <div class="ips-impact-content">
+                    <span class="ips-impact-tag">Dampak Negatif</span>
+                    <h3>Menimbulkan Masalah Baru</h3>
+                    <ul>
+                        <li>Polusi udara dan air meningkat.</li>
+                        <li>Hutan dan ruang hijau berkurang.</li>
+                        <li>Kesenjangan kaya dan miskin dapat meningkat.</li>
+                        <li>Budaya gotong royong dapat tergeser.</li>
+                    </ul>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="ips-photo-wide">
+            <img src="kotaalam.jpg"
+                 alt="Perbandingan lingkungan perkotaan dan alam">
+            <div class="ips-photo-wide-caption">
+                <h3>Pembangunan harus memperhatikan lingkungan</h3>
+                <p>
+                    Kemajuan tidak seharusnya mengorbankan alam
+                    dan kehidupan masyarakat.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- SECTION 3: SDGs DAN PEMBANGUNAN BERKELANJUTAN -->
+    <section id="berkelanjutan" class="ips-section">
+
+        <div class="ips-section-heading">
+            <span class="ips-label">MENUJU MASA DEPAN</span>
+            <h2>Apa Itu Pembangunan Berkelanjutan?</h2>
+            <p>
+                Pembangunan yang baik bukan hanya memikirkan kebutuhan
+                manusia sekarang, tetapi juga masa depan generasi berikutnya.
+            </p>
+        </div>
+
+        <div class="ips-sustainable-hero">
+            <div class="ips-sustainable-text">
+                <h3>Memenuhi Kebutuhan Saat Ini, Menjaga Masa Depan</h3>
+                <p>
+                    Pembangunan berkelanjutan adalah pembangunan yang
+                    memenuhi kebutuhan generasi sekarang tanpa mengurangi
+                    kemampuan generasi mendatang untuk memenuhi
+                    kebutuhan mereka sendiri.
+                </p>
+                <p>
+                    Konsep ini berasal dari Brundtland Report tahun 1987.
+                </p>
+            </div>
+
+            <div class="ips-sustainable-image">
+                <img src="jagabumi.png"
+                     alt="Ilustrasi bumi yang dijaga bersama">
+            </div>
+        </div>
+
+
+        <!-- 3 PILAR -->
+        <div class="ips-subtitle">
+            <span>05</span>
+            <div>
+                <h2>Tiga Pilar Pembangunan Berkelanjutan</h2>
+                <p>
+                    Pembangunan berkelanjutan harus menjaga keseimbangan
+                    antara tiga aspek berikut.
+                </p>
+            </div>
+        </div>
+
+        <div class="ips-pillar-grid">
+
+            <article class="ips-pillar-card ips-card-peach">
+                <img src="ekonomi.jpg" alt="Ekonomi">
+                <h3>Ekonomi</h3>
+                <p>
+                    Mendorong pertumbuhan ekonomi dan meningkatkan
+                    kesejahteraan masyarakat.
+                </p>
+            </article>
+
+            <article class="ips-pillar-card ips-card-pink">
+                <img src="sosial.jpg" alt="Sosial">
+                <h3>Sosial</h3>
+                <p>
+                    Menciptakan kehidupan yang adil, sehat, dan
+                    memberikan kesempatan bagi semua orang.
+                </p>
+            </article>
+
+            <article class="ips-pillar-card ips-card-green">
+                <img src="lingkungan.jpg" alt="Lingkungan">
+                <h3>Lingkungan</h3>
+                <p>
+                    Menjaga alam dan menggunakan sumber daya secara
+                    bertanggung jawab.
+                </p>
+            </article>
+
+        </div>
+
+
+        <!-- MDGS VS SDGS -->
+        <div class="ips-subtitle">
+            <span>06</span>
+            <div>
+                <h2>Dari MDGs Menuju SDGs</h2>
+                <p>
+                    SDGs merupakan kelanjutan dari tujuan pembangunan
+                    global sebelumnya, yaitu MDGs.
+                </p>
+            </div>
+        </div>
+
+        <div class="ips-comparison">
+
+            <article class="ips-comparison-card ips-card-purple">
+                <span class="ips-year">2000–2015</span>
+                <h3>MDGs</h3>
+                <h4>Millennium Development Goals</h4>
+                <ul>
+                    <li>Memiliki 8 tujuan.</li>
+                    <li>Berfokus pada pengurangan kemiskinan ekstrem.</li>
+                    <li>Lebih berfokus pada negara berkembang.</li>
+                </ul>
+            </article>
+
+            <div class="ips-comparison-arrow">
+                <i data-lucide="arrow-right"></i>
+            </div>
+
+            <article class="ips-comparison-card ips-card-pink">
+                <span class="ips-year">2016–2030</span>
+                <h3>SDGs</h3>
+                <h4>Sustainable Development Goals</h4>
+                <ul>
+                    <li>Memiliki 17 tujuan dan 169 target.</li>
+                    <li>Berlaku untuk semua negara.</li>
+                    <li>Mengutamakan prinsip No One Left Behind.</li>
+                </ul>
+            </article>
+
+        </div>
+
+
+        <!-- 17 SDGS -->
+        <div class="ips-sdg-intro">
+            <div>
+                <span class="ips-label">AGENDA 2030</span>
+                <h2>Kenali 17 Tujuan SDGs</h2>
+                <p>
+                    SDGs adalah 17 tujuan global yang dibuat oleh
+                    Perserikatan Bangsa-Bangsa (PBB) untuk mengatasi
+                    berbagai masalah dunia dan menciptakan kehidupan
+                    yang lebih baik bagi semua orang.
+                </p>
+            </div>
+
+            <img src="infografissdg.jpg"
+                 alt="Infografik 17 tujuan SDGs">
+        </div>
+
+
+        <!-- KELOMPOK SDGS -->
+        <h3 class="ips-centered-title">
+            17 Tujuan SDGs Dibagi Menjadi 4 Kelompok
+        </h3>
+
+        <div class="ips-grid ips-four-columns">
+
+            <article class="ips-sdg-group ips-card-pink">
+                <i data-lucide="heart-handshake"></i>
+                <h3>Sosial</h3>
+                <p>SDG 1–5</p>
+                <p>
+                    Berfokus pada kesejahteraan manusia, seperti
+                    pengentasan kemiskinan, kesehatan, dan pendidikan.
+                </p>
+            </article>
+
+            <article class="ips-sdg-group ips-card-peach">
+                <i data-lucide="chart-no-axes-combined"></i>
+                <h3>Ekonomi</h3>
+                <p>SDG 7–11</p>
+                <p>
+                    Berfokus pada energi, pekerjaan, industri,
+                    inovasi, dan pembangunan wilayah.
+                </p>
+            </article>
+
+            <article class="ips-sdg-group ips-card-green">
+                <i data-lucide="leaf"></i>
+                <h3>Lingkungan</h3>
+                <p>SDG 6, 12–15</p>
+                <p>
+                    Berfokus pada air bersih, konsumsi bertanggung jawab,
+                    iklim, laut, dan ekosistem darat.
+                </p>
+            </article>
+
+            <article class="ips-sdg-group ips-card-purple">
+                <i data-lucide="landmark"></i>
+                <h3>Tata Kelola</h3>
+                <p>SDG 16–17</p>
+                <p>
+                    Berfokus pada perdamaian, keadilan, kelembagaan,
+                    dan kerja sama.
+                </p>
+            </article>
+
+        </div>
+
+
+        <!-- INDONESIA -->
+        <div class="ips-subtitle">
+            <span>07</span>
+            <div>
+                <h2>Bagaimana Indonesia Menerapkan SDGs?</h2>
+                <p>
+                    Indonesia juga melakukan berbagai upaya untuk
+                    mendukung tercapainya tujuan SDGs.
+                </p>
+            </div>
+        </div>
+
+        <div class="ips-indonesia-layout">
+
+            <div class="ips-indonesia-image">
+                <img src="sdg indo.png"
+                     alt="Pembangunan berkelanjutan di Indonesia">
+            </div>
+
+            <div class="ips-indonesia-list">
+
+                <article>
+                    <i data-lucide="heart-handshake"></i>
+                    <div>
+                        <h3>Bidang Sosial</h3>
+                        <p>
+                            Program Kartu Indonesia Pintar (KIP) dan
+                            Jaminan Kesehatan Nasional (JKN/BPJS).
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <i data-lucide="store"></i>
+                    <div>
+                        <h3>Bidang Ekonomi</h3>
+                        <p>
+                            Pemberdayaan UMKM, pengurangan kemiskinan,
+                            dan pembangunan infrastruktur daerah.
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <i data-lucide="trees"></i>
+                    <div>
+                        <h3>Bidang Lingkungan</h3>
+                        <p>
+                            Pemulihan hutan mangrove, pengurangan
+                            sampah plastik, dan peralihan energi.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
+        <!-- PERAN PELAJAR -->
+        <div class="ips-subtitle">
+            <span>08</span>
+            <div>
+                <h2>Apa yang Bisa Kita Lakukan?</h2>
+                <p>
+                    Pembangunan berkelanjutan bukan hanya tugas pemerintah.
+                    Kita sebagai pelajar juga bisa ikut berperan.
+                </p>
+            </div>
+        </div>
+
+        <div class="ips-student-grid">
+
+            <article class="ips-student-card ips-card-yellow">
+                <i data-lucide="zap"></i>
+                <h3>Hemat Energi</h3>
+                <p>Matikan lampu dan alat elektronik saat tidak digunakan.</p>
+            </article>
+
+            <article class="ips-student-card ips-card-green">
+                <i data-lucide="recycle"></i>
+                <h3>Kurangi Plastik</h3>
+                <p>Gunakan botol minum dan tas belanja yang dapat dipakai ulang.</p>
+            </article>
+
+            <article class="ips-student-card ips-card-pink">
+                <i data-lucide="heart-handshake"></i>
+                <h3>Hindari Bullying</h3>
+                <p>Hargai orang lain dan ciptakan lingkungan yang aman.</p>
+            </article>
+
+            <article class="ips-student-card ips-card-purple">
+                <i data-lucide="shopping-bag"></i>
+                <h3>Dukung Produk Lokal</h3>
+                <p>Menghargai dan mendukung produk buatan masyarakat sekitar.</p>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- PENUTUP -->
+    <section class="ips-closing">
+        <div class="ips-closing-icon">
+            <i data-lucide="earth"></i>
+        </div>
+
+        <h2>Masa Depan yang Lebih Baik Dimulai dari Sekarang</h2>
+
+        <p>
+            Setiap tindakan kecil dapat membawa perubahan.
+            Dengan bekerja sama, kita bisa menciptakan dunia yang
+            lebih adil, sejahtera, dan lestari.
+        </p>
+
+        <a href="#ips-page" class="ips-button"
+           onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+            Kembali ke Atas
+            <i data-lucide="arrow-up"></i>
+        </a>
+    </section>
+
+</main>
+
+
+<!-- ICON LUCIDE -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
+
+
+    <!-- PROTOTYPE -->
+    <div id="prototype" class="ips-section">
+        
+         <div class="prototype-poster">
+        <img src="poster.png" alt="Poster Prototype">
+    </div>
+    <p>credits: kelompok 3 dari 92</p>
+    </div>
+
+
+</section>
+
+
+
+        <!-- HALAMAN SDG 12 -->
+
+<section id="sdg12" class="page" hidden>
+
+<div class="sdg12-page">
+
+    <!-- HERO -->
+    <section class="sdg12-hero" id="sdg12-pengenalan">
+        <div class="sdg12-hero-text">
+            <span class="sdg12-label">SUSTAINABLE DEVELOPMENT GOALS • 12</span>
+            <h1>Konsumsi dan Produksi yang Bertanggung Jawab</h1>
+            <p>
+                Menggunakan barang dengan bijak, mengurangi sampah,
+                dan tidak membeli sesuatu hanya karena mengikuti tren.
+                Kebiasaan kecil ini bisa membantu menjaga lingkungan.
+            </p>
+            <a href="#sdg12-masalah" class="sdg12-button">
+                Mulai Jelajahi <i data-lucide="arrow-down"></i>
+            </a>
+        </div>
+
+        <div class="sdg12-hero-image">
+            <img src="hero.jpg" alt="Ilustrasi SDG 12">
+            <div class="sdg12-floating-note">
+                <i data-lucide="leaf"></i>
+                <span>Mulai dari kebiasaan sehari-hari</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PENGENALAN -->
+    <section class="sdg12-intro">
+        <div class="sdg12-section-heading">
+            <span class="sdg12-label">01 • PENGENALAN</span>
+            <h2>Kenapa SDG 12 Penting?</h2>
+            <p>
+                SDG 12 mengajak kita untuk menggunakan sumber daya
+                dengan lebih bijak dan mengurangi barang yang terbuang.
+            </p>
+        </div>
+
+        <div class="sdg12-intro-grid">
+            <div class="sdg12-intro-card sdg12-pink">
+                <i data-lucide="shopping-bag"></i>
+                <h3>Bijak Membeli</h3>
+                <p>
+                    Membeli barang sesuai kebutuhan dan memikirkan
+                    apakah barang tersebut benar-benar akan digunakan.
+                </p>
+            </div>
+
+            <div class="sdg12-intro-card sdg12-yellow">
+                <i data-lucide="recycle"></i>
+                <h3>Bijak Menggunakan</h3>
+                <p>
+                    Merawat barang yang sudah dimiliki, menggunakan
+                    kembali barang yang masih layak, dan mengurangi sampah.
+                </p>
+            </div>
+
+            <div class="sdg12-intro-card sdg12-purple">
+                <i data-lucide="factory"></i>
+                <h3>Produksi Bertanggung Jawab</h3>
+                <p>
+                    Membuat barang dengan memperhatikan penggunaan
+                    bahan baku, energi, dan dampaknya terhadap lingkungan.
+                </p>
+            </div>
+        </div>
+
+        <div class="sdg12-reason">
+            <div>
+                <span class="sdg12-label">ALASAN MEMILIH SDG 12</span>
+                <h3>Hal sederhana yang dekat dengan kehidupan kita</h3>
+                <p>
+                    Aku memilih SDG 12 karena hal ini sering kita temui
+                    dalam kehidupan sehari-hari. Misalnya saat membeli
+                    barang, kita perlu memikirkan apakah barang tersebut
+                    benar-benar dibutuhkan atau hanya karena terlihat lucu
+                    dan sedang populer.
+                </p>
+                <p>
+                    Aku juga terkadang kurang teliti saat memilih barang.
+                    Akibatnya, ada barang yang jarang digunakan sampai
+                    akhirnya menumpuk dan berdebu. Dari sini, aku belajar
+                    bahwa membeli barang bukan hanya soal keinginan,
+                    tetapi juga tentang bagaimana kita menggunakannya.
+                </p>
+            </div>
+
+            <img src="kamar berantakan.jpg" alt="Ilustrasi memilih barang">
+        </div>
+    </section>
+
+
+    <!-- MASALAH -->
+    <section class="sdg12-problem" id="sdg12-masalah">
+        <div class="sdg12-section-heading">
+            <span class="sdg12-label">02 • PERMASALAHAN</span>
+            <h2>Ketika Kita Membeli Terlalu Banyak</h2>
+            <p>
+                Salah satu masalah yang berhubungan dengan SDG 12
+                adalah konsumsi berlebihan atau membeli barang
+                melebihi kebutuhan.
+            </p>
+        </div>
+
+        <div class="sdg12-problem-layout">
+            <div class="sdg12-problem-image">
+                <img src="belanjaan numpuk.jpg"
+                     alt="Ilustrasi barang belanjaan yang menumpuk">
+                <div class="sdg12-image-caption">
+                    Barang yang dibeli belum tentu selalu digunakan.
+                </div>
+            </div>
+
+            <div class="sdg12-problem-content">
+                <h3>Apa yang menyebabkan hal ini?</h3>
+                <p>
+                    Banyak orang membeli barang karena sedang mengikuti
+                    tren, melihat promosi dari influencer, atau tertarik
+                    dengan barang yang terlihat lucu meskipun sebenarnya
+                    tidak terlalu dibutuhkan.
+                </p>
+
+                <div class="sdg12-flow">
+                    <div class="sdg12-flow-item">
+                        <span>01</span>
+                        <div>
+                            <h4>Melihat tren</h4>
+                            <p>Tertarik dengan barang yang sedang populer.</p>
+                        </div>
+                    </div>
+
+                    <div class="sdg12-flow-item">
+                        <span>02</span>
+                        <div>
+                            <h4>Ingin membeli</h4>
+                            <p>Membeli tanpa memikirkan kebutuhan terlebih dahulu.</p>
+                        </div>
+                    </div>
+
+                    <div class="sdg12-flow-item">
+                        <span>03</span>
+                        <div>
+                            <h4>Barang menumpuk</h4>
+                            <p>Barang jarang digunakan dan akhirnya memenuhi ruangan.</p>
+                        </div>
+                    </div>
+
+                    <div class="sdg12-flow-item">
+                        <span>04</span>
+                        <div>
+                            <h4>Muncul dampak</h4>
+                            <p>Uang terbuang dan penggunaan sumber daya semakin banyak.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="sdg12-center-title">Apa dampaknya?</h3>
+
+        <div class="sdg12-impact-grid">
+            <div class="sdg12-impact-card">
+                <i data-lucide="wallet"></i>
+                <h3>Kerugian Finansial</h3>
+                <p>
+                    Uang digunakan untuk membeli barang yang sebenarnya
+                    tidak diperlukan. Akibatnya, pengeluaran menjadi
+                    lebih besar.
+                </p>
+            </div>
+
+            <div class="sdg12-impact-card">
+                <i data-lucide="package"></i>
+                <h3>Barang Menumpuk</h3>
+                <p>
+                    Barang yang jarang digunakan bisa memenuhi ruangan
+                    dan membuat tempat menjadi berantakan.
+                </p>
+            </div>
+
+            <div class="sdg12-impact-card">
+                <i data-lucide="earth"></i>
+                <h3>Dampak Lingkungan</h3>
+                <p>
+                    Semakin banyak barang diproduksi dan dibuang,
+                    semakin banyak pula bahan baku dan sumber daya
+                    yang digunakan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SOLUSI -->
+    <section class="sdg12-solution" id="sdg12-solusi">
+        <div class="sdg12-section-heading">
+            <span class="sdg12-label">03 • SOLUSI</span>
+            <h2>Belajar Menjadi Konsumen yang Bijak</h2>
+            <p>
+                Kita tidak harus berhenti membeli barang.
+                Yang penting adalah belajar membedakan kebutuhan
+                dan keinginan.
+            </p>
+        </div>
+
+        <div class="sdg12-split">
+            <div class="sdg12-split-text">
+                <h3>Sebelum membeli, coba pikirkan dulu!</h3>
+                <p>
+                    Ada beberapa cara sederhana yang bisa dilakukan
+                    untuk mengurangi kebiasaan membeli barang secara
+                    berlebihan.
+                </p>
+
+                <div class="sdg12-tip">
+                    <i data-lucide="list-checks"></i>
+                    <div>
+                        <h4>Buat daftar kebutuhan</h4>
+                        <p>
+                            Catat barang yang memang dibutuhkan sebelum
+                            pergi berbelanja.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sdg12-tip">
+                    <i data-lucide="calendar-days"></i>
+                    <div>
+                        <h4>Tentukan anggaran bulanan</h4>
+                        <p>
+                            Batasi uang untuk membeli barang agar
+                            pengeluaran tetap terkontrol.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sdg12-tip">
+                    <i data-lucide="clock"></i>
+                    <div>
+                        <h4>Jangan terburu-buru</h4>
+                        <p>
+                            Jangan langsung membeli barang yang sedang
+                            viral. Beri waktu untuk memikirkan kegunaannya.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sdg12-tip">
+                    <i data-lucide="heart-handshake"></i>
+                    <div>
+                        <h4>Rawat barang yang dimiliki</h4>
+                        <p>
+                            Gunakan dan rawat barang dengan baik agar
+                            tidak cepat rusak dan harus membeli yang baru.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sdg12-check-panel">
+                <div class="sdg12-check-icon">
+                    <i data-lucide="shopping-cart"></i>
+                </div>
+                <h3>Sudah siap membeli?</h3>
+                <p>
+                    Coba periksa beberapa pertanyaan ini sebelum
+                    memutuskan untuk membeli barang.
+                </p>
+
+                <label class="sdg12-check">
+                    <input type="checkbox">
+                    <span>Apakah barang ini benar-benar aku butuhkan?</span>
+                </label>
+
+                <label class="sdg12-check">
+                    <input type="checkbox">
+                    <span>Apakah aku akan menggunakannya dalam jangka panjang?</span>
+                </label>
+
+                <label class="sdg12-check">
+                    <input type="checkbox">
+                    <span>Apakah aku sudah memiliki barang yang serupa?</span>
+                </label>
+
+                <label class="sdg12-check">
+                    <input type="checkbox">
+                    <span>Apakah harganya sesuai dengan anggaranku?</span>
+                </label>
+
+                <div class="sdg12-check-footer">
+                    <i data-lucide="lightbulb"></i>
+                    Tidak harus selalu membeli. Kadang, pilihan terbaik
+                    adalah menggunakan barang yang sudah kita punya.
+                </div>
+            </div>
+        </div>
+
+        <div class="sdg12-reuse">
+            <img src="reuse.jpg" alt="Contoh penggunaan kembali barang">
+            <div>
+                <span class="sdg12-label">PRODUKSI YANG BERTANGGUNG JAWAB</span>
+                <h3>Barang lama bisa punya kegunaan baru</h3>
+                <p>
+                    Barang bekas yang masih layak dapat digunakan kembali
+                    atau diolah menjadi sesuatu yang baru. Contohnya,
+                    menggunakan wadah bekas sebagai tempat alat tulis.
+                </p>
+                <p>
+                    Namun, barang hasil daur ulang juga sebaiknya memiliki
+                    kegunaan yang jelas. Jangan sampai kita membuat barang
+                    baru yang akhirnya hanya menumpuk dan tidak digunakan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TARGET SDG 12 -->
+    <section class="sdg12-targets">
+        <div class="sdg12-section-heading">
+            <span class="sdg12-label">04 • TARGET SDG 12</span>
+            <h2>Apa yang Ingin Dicapai?</h2>
+            <p>
+                SDG 12 memiliki beberapa target untuk mendorong
+                kebiasaan konsumsi dan produksi yang lebih bertanggung jawab.
+            </p>
+        </div>
+
+        <div class="sdg12-target-grid">
+            <div class="sdg12-target-card">
+                <span>12.2</span>
+                <i data-lucide="trees"></i>
+                <h3>Penggunaan Sumber Daya</h3>
+                <p>
+                    Menggunakan sumber daya alam secara lebih efisien
+                    dan bertanggung jawab.
+                </p>
+            </div>
+
+            <div class="sdg12-target-card">
+                <span>12.5</span>
+                <i data-lucide="recycle"></i>
+                <h3>Mengurangi Sampah</h3>
+                <p>
+                    Mengurangi jumlah sampah melalui pencegahan,
+                    penggunaan kembali, dan daur ulang.
+                </p>
+            </div>
+
+            <div class="sdg12-target-card">
+                <span>12.8</span>
+                <i data-lucide="book-open"></i>
+                <h3>Meningkatkan Kesadaran</h3>
+                <p>
+                    Memberikan informasi agar masyarakat memahami
+                    cara hidup yang lebih berkelanjutan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PANCASILA -->
+    <section class="sdg12-pancasila" id="sdg12-aksi">
+        <div class="sdg12-section-heading">
+            <span class="sdg12-label">05 • PANCASILA DAN SDG 12</span>
+            <h2>Nilai Pancasila dalam Menjaga Lingkungan</h2>
+            <p>
+                Penerapan SDG 12 juga berhubungan dengan nilai-nilai
+                Pancasila, terutama dalam bekerja sama menjaga lingkungan.
+            </p>
+        </div>
+
+        <div class="sdg12-sila-grid">
+            <div class="sdg12-sila-card">
+                <div class="sdg12-sila-number">02</div>
+                <h3>Kemanusiaan yang Adil dan Beradab</h3>
+                <p>
+                    Peduli terhadap sesama manusia dan lingkungan,
+                    karena kerusakan lingkungan juga dapat merugikan
+                    kehidupan masyarakat.
+                </p>
+            </div>
+
+            <div class="sdg12-sila-card">
+                <div class="sdg12-sila-number">03</div>
+                <h3>Persatuan Indonesia</h3>
+                <p>
+                    Bekerja sama dengan negara lain karena masalah
+                    lingkungan tidak dapat diselesaikan oleh satu
+                    negara saja.
+                </p>
+            </div>
+
+            <div class="sdg12-sila-card">
+                <div class="sdg12-sila-number">05</div>
+                <h3>Keadilan Sosial bagi Seluruh Rakyat Indonesia</h3>
+                <p>
+                    Menggunakan sumber daya secara adil dan memberikan
+                    kesempatan yang seimbang bagi setiap negara untuk
+                    menjaga lingkungan.
+                </p>
+            </div>
+        </div>
+
+        <div class="sdg12-cooperation">
+            <div class="sdg12-cooperation-image">
+                <img src="kerjasama.jpg"
+                     alt="Ilustrasi kerja sama antarnegara">
+            </div>
+
+            <div class="sdg12-cooperation-text">
+                <span class="sdg12-label">KERJA SAMA ANTARNEGARA</span>
+                <h3>Kenapa negara-negara perlu bekerja sama?</h3>
+                <p>
+                    Masalah sampah dan penggunaan sumber daya tidak
+                    hanya berdampak pada satu negara. Karena itu,
+                    negara-negara perlu saling membantu dan berbagi
+                    pengetahuan untuk mencari solusi.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Saling membantu:</strong>
+                        berbagi cara mengurangi dan mengolah sampah.
+                    </li>
+                    <li>
+                        <strong>Menghargai perbedaan:</strong>
+                        mendengarkan pendapat dan kebiasaan setiap negara.
+                    </li>
+                    <li>
+                        <strong>Musyawarah:</strong>
+                        mencari keputusan bersama yang dapat diterima.
+                    </li>
+                    <li>
+                        <strong>Bersikap adil:</strong>
+                        membagi tugas sesuai kemampuan masing-masing negara.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sdg12-case">
+            <div class="sdg12-case-heading">
+                <i data-lucide="messages-square"></i>
+                <div>
+                    <span class="sdg12-label">CONTOH PERMASALAHAN</span>
+                    <h3>Bagaimana jika negara-negara memiliki kepentingan berbeda?</h3>
+                </div>
+            </div>
+
+            <p>
+                Misalnya, ada negara yang ingin mendapatkan keuntungan
+                lebih besar dari penggunaan sumber daya alam, sedangkan
+                negara lain membutuhkan bantuan untuk menjaga lingkungannya.
+            </p>
+
+            <div class="sdg12-case-answer">
+                <i data-lucide="handshake"></i>
+                <div>
+                    <h4>Peran Indonesia</h4>
+                    <p>
+                        Indonesia dapat mengajak semua negara berdiskusi,
+                        mendengarkan pendapat setiap pihak, dan mencari
+                        kesepakatan yang adil agar tidak merugikan negara lain.
+                        Hal ini sesuai dengan sila kedua dan kelima Pancasila.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- AKSI NYATA -->
+    <section class="sdg12-my-action">
+        <div class="sdg12-action-heading">
+            <span class="sdg12-label">06 • AKSI NYATA</span>
+            <h2>Mulai dari Hal Kecil</h2>
+            <p>
+                Menjaga lingkungan tidak harus selalu dimulai dari
+                hal besar. Kita bisa melakukannya melalui kebiasaan
+                sehari-hari.
+            </p>
+        </div>
+
+        <div class="sdg12-action-grid">
+            <div class="sdg12-action-card">
+                <img src="botol minum.jpg" alt="Membawa botol minum sendiri">
+                <div>
+                    <i data-lucide="glass-water"></i>
+                    <h3>Membawa Botol Minum</h3>
+                    <p>
+                        Membawa botol minum sendiri untuk mengurangi
+                        penggunaan botol plastik sekali pakai.
+                    </p>
+                </div>
+            </div>
+
+            <div class="sdg12-action-card">
+                <img src="bekel.jpg" alt="Membawa kotak makan sendiri">
+                <div>
+                    <i data-lucide="utensils"></i>
+                    <h3>Membawa Kotak Makan</h3>
+                    <p>
+                        Menggunakan kotak makan sendiri agar tidak
+                        terlalu sering memakai wadah sekali pakai.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+<section class="sdg12-voting" id="sdg12-aksi">
+
+    <div class="sdg12-voting-heading">
+        <span class="sdg12-label">LET'S TAKE ACTION!</span>
+        <h2>Menurutmu, Aksi Apa yang Paling Efektif?</h2>
+        <p>
+            Ada banyak cara sederhana untuk menerapkan SDG 12.
+            Dari pilihan di bawah ini, menurutmu mana yang paling
+            efektif untuk dilakukan dalam kehidupan sehari-hari?
+        </p>
+    </div>
+
+    <div class="sdg12-voting-list">
+
+        <!-- PILIHAN 1 -->
+        <button class="sdg12-vote-card"
+            onclick="selectSDG12Vote(this, 0)">
+
+            <div class="sdg12-vote-icon">
+                <i data-lucide="shopping-bag"></i>
+            </div>
+
+            <div class="sdg12-vote-info">
+                <h3>Membeli Sesuai Kebutuhan</h3>
+                <p>
+                    Menghindari belanja berlebihan dan membeli
+                    barang yang benar-benar diperlukan.
+                </p>
+
+                <div class="sdg12-vote-result">
+                    <div class="sdg12-vote-bar">
+                        <div class="sdg12-vote-fill" style="width: 25%"></div>
+                    </div>
+                    <div class="sdg12-vote-stats">
+                        <span>17 suara</span>
+                        <strong>20,5%</strong>
+                    </div>
+                </div>
+            </div>
+        </button>
+
+
+        <!-- PILIHAN 2 -->
+        <button class="sdg12-vote-card"
+            onclick="selectSDG12Vote(this, 1)">
+
+            <div class="sdg12-vote-icon">
+                <i data-lucide="refresh-cw"></i>
+            </div>
+
+            <div class="sdg12-vote-info">
+                <h3>Menggunakan Kembali Barang</h3>
+                <p>
+                    Memperbaiki, memakai ulang, atau mendaur
+                    ulang barang yang masih bisa digunakan.
+                </p>
+
+                <div class="sdg12-vote-result">
+                    <div class="sdg12-vote-bar">
+                        <div class="sdg12-vote-fill" style="width: 30%"></div>
+                    </div>
+                    <div class="sdg12-vote-stats">
+                        <span>23 suara</span>
+                        <strong>27,7%</strong>
+                    </div>
+                </div>
+            </div>
+        </button>
+
+
+        <!-- PILIHAN 3 -->
+        <button class="sdg12-vote-card"
+            onclick="selectSDG12Vote(this, 2)">
+
+            <div class="sdg12-vote-icon">
+                <i data-lucide="recycle"></i>
+            </div>
+
+            <div class="sdg12-vote-info">
+
+                <div class="sdg12-vote-title">
+                    <h3>Mengurangi Plastik Sekali Pakai</h3>
+                    <span class="sdg12-popular">
+                        Paling Banyak Dipilih
+                    </span>
+                </div>
+
+                <p>
+                    Membawa tumbler dan kotak makan sendiri
+                    untuk mengurangi sampah plastik.
+                </p>
+
+                <div class="sdg12-vote-result">
+                    <div class="sdg12-vote-bar">
+                        <div class="sdg12-vote-fill" style="width: 35%"></div>
+                    </div>
+                    <div class="sdg12-vote-stats">
+                        <span>29 suara</span>
+                        <strong>34,9%</strong>
+                    </div>
+                </div>
+            </div>
+        </button>
+
+
+        <!-- PILIHAN 4 -->
+        <button class="sdg12-vote-card"
+            onclick="selectSDG12Vote(this, 3)">
+
+            <div class="sdg12-vote-icon">
+                <i data-lucide="utensils"></i>
+            </div>
+
+            <div class="sdg12-vote-info">
+                <h3>Mengurangi Sisa Makanan</h3>
+                <p>
+                    Mengambil makanan secukupnya dan
+                    menghindari membuang makanan.
+                </p>
+
+                <div class="sdg12-vote-result">
+                    <div class="sdg12-vote-bar">
+                        <div class="sdg12-vote-fill" style="width: 10%"></div>
+                    </div>
+                    <div class="sdg12-vote-stats">
+                        <span>14 suara</span>
+                        <strong>16,9%</strong>
+                    </div>
+                </div>
+            </div>
+        </button>
+
+    </div>
+
+
+    <!-- PESAN SETELAH MEMILIH -->
+    <div class="sdg12-vote-feedback" id="sdg12VoteFeedback">
+        <i data-lucide="mouse-pointer-click"></i>
+        <span>
+            Klik salah satu pilihan untuk menunjukkan aksi
+            yang menurutmu paling efektif!
+        </span>
+    </div>
+
+    <p class="sdg12-vote-note">
+        *Persentase dan jumlah suara merupakan data simulasi
+        untuk keperluan edukasi, bukan hasil survei sungguhan.
+    </p>
+
+</section>
+    </section>
+    <!-- PENUTUP -->
+    <section class="sdg12-closing">
+        <i data-lucide="sprout"></i>
+        <h2>Perubahan Bisa Dimulai dari Kebiasaan Kita</h2>
+        <p>
+            SDG 12 mengingatkan kita untuk lebih bijak dalam membeli,
+            menggunakan, dan membuat barang. Dengan mengurangi pembelian
+            yang tidak diperlukan, merawat barang, serta mengajak orang
+            lain untuk peduli, kita ikut membantu menciptakan lingkungan
+            yang lebih baik.
+        </p>
+    </section>
+
+</div>
+</section>
+
+
+        <!-- HALAMAN KERJASAMA INTERNASIONAL -->
+        
+<section id="kerjasama" class="page" hidden>
+
+    <!-- PENGANTAR -->
+    <div class="ks-hero">
+        <div class="ks-hero-text">
+            <span class="ks-eyebrow">SDGs • INDONESIA • DUNIA</span>
+            <h1>Kerja Sama Antarnegara</h1>
+            <p>
+                Permasalahan sampah dan pencemaran lingkungan tidak hanya
+                terjadi di satu negara. Karena itu, Indonesia perlu bekerja
+                sama dengan negara lain untuk membangun kebiasaan konsumsi
+                dan produksi yang lebih bertanggung jawab.
+            </p>
+            <a href="#ks-pengantar" class="ks-hero-link">
+                Jelajahi halaman ↓
+            </a>
+        </div>
+
+        <div class="ks-hero-image">
+            <img src="sampah.jpg"
+                 alt="Ilustrasi sampah plastik dan lingkungan">
+        </div>
+    </div>
+
+
+    <!-- GUIDE / NAVIGASI -->
+    <div class="ks-guide" id="ks-pengantar">
+        <h2>Jelajahi Pembahasan</h2>
+        <p>Pilih bagian yang ingin kamu baca.</p>
+
+        <div class="ks-guide-list">
+            <a href="#ks-bilateral">01. Bilateral</a>
+            <a href="#ks-regional">02. Regional</a>
+            <a href="#ks-multilateral">03. Multilateral</a>
+            <a href="#ks-internasional">04. Internasional</a>
+            <a href="#ks-peran">05. Peran Indonesia</a>
+        </div>
+    </div>
+
+
+    <!-- HUBUNGAN DENGAN SDG 12 -->
+    <div class="ks-intro">
+        <div class="ks-intro-text">
+            <span class="ks-small-label">OUR FOCUS</span>
+            <h2>SDG 12: Konsumsi dan Produksi yang Bertanggung Jawab</h2>
+            <p>
+                SDG 12 mengajak masyarakat untuk menggunakan sumber daya
+                dengan bijak, mengurangi sampah, dan tidak membuang makanan
+                maupun barang secara berlebihan.
+            </p>
+            <p>
+                Masalah sampah plastik juga dapat berdampak ke negara lain.
+                Plastik yang masuk ke laut bisa terbawa arus sehingga
+                pencemaran lingkungan membutuhkan perhatian bersama.
+            </p>
+        </div>
+
+        <div class="ks-intro-image">
+            <img src="sdg 12.png"
+                 alt="Ilustrasi konsumsi dan produksi bertanggung jawab">
+        </div>
+    </div>
+
+
+    <!-- BILATERAL -->
+    <div class="ks-section ks-bilateral" id="ks-bilateral">
+        <div class="ks-section-heading">
+            <span>01 / TWO COUNTRIES</span>
+            <h2>Kerja Sama Bilateral</h2>
+            <p>
+                Kerja sama yang dilakukan oleh dua negara untuk mencapai
+                tujuan atau kepentingan bersama.
+            </p>
+        </div>
+
+        <div class="ks-feature">
+            <div class="ks-feature-image">
+                <img src="indojepang.jpg"
+                     alt="Kerja sama lingkungan Indonesia dan Jepang">
+            </div>
+
+            <div class="ks-feature-content">
+                <span class="ks-tag">INDONESIA × JEPANG</span>
+                <h3>Kerja Sama Lingkungan</h3>
+                <p>
+                    Indonesia dan Jepang menjalin kerja sama dalam bidang
+                    lingkungan, termasuk pengelolaan sampah, pencemaran laut,
+                    dan perubahan iklim.
+                </p>
+
+                <div class="ks-info">
+                    <h4>Contoh kegiatan</h4>
+                    <p>
+                        Pada Agustus 2022, kedua negara menandatangani
+                        Memorandum of Cooperation (MoC) tentang kerja sama
+                        lingkungan. Kerja sama ini dilanjutkan melalui
+                        pertemuan dan dialog teknis untuk membahas
+                        pengelolaan sampah dan masalah lingkungan lainnya.
+                    </p>
+                </div>
+
+                <div class="ks-info">
+                    <h4>Peran dan manfaat</h4>
+                    <p>
+                        Kedua negara bertukar pengetahuan, membahas kebijakan,
+                        serta mengembangkan kegiatan dan teknologi pengelolaan
+                        sampah. Hal ini dapat membantu Indonesia meningkatkan
+                        pengelolaan limbah dan mendukung SDG 12.
+                    </p>
+                </div>
+
+                <span class="ks-year">Sejak 2022 • Berlanjut dalam dialog berikutnya</span>
+            </div>
+        </div>
+        <a href="#ks-pengantar" class="ks-back-guide">
+    ↑ Kembali ke Guide
+</a>
+    </div>
+
+
+    <!-- REGIONAL -->
+    <div class="ks-section ks-regional" id="ks-regional">
+        <div class="ks-section-heading">
+            <span>02 / ONE REGION</span>
+            <h2>Kerja Sama Regional</h2>
+            <p>
+                Kerja sama yang dilakukan oleh beberapa negara dalam satu
+                kawasan atau wilayah geografis tertentu.
+            </p>
+        </div>
+
+        <div class="ks-regional-layout">
+            <div class="ks-regional-content">
+                <span class="ks-tag">ASEAN</span>
+                <h3>ASEAN Regional Action Plan for Combating Marine Debris</h3>
+                <p>
+                    Negara-negara ASEAN bekerja sama untuk mengatasi
+                    permasalahan sampah laut, terutama sampah plastik.
+                </p>
+
+                <h4>Program kerja sama</h4>
+                <p>
+                    ASEAN membuat ASEAN Regional Action Plan for Combating
+                    Marine Debris untuk periode 2021–2025. Rencana ini
+                    mendorong pengurangan sampah plastik, perbaikan
+                    pengelolaan sampah, dan penanganan pencemaran laut.
+                </p>
+
+                <h4>Peran Indonesia dan manfaatnya</h4>
+                <p>
+                    Indonesia ikut bekerja sama dengan negara anggota ASEAN
+                    dalam upaya mengurangi sampah laut. Kerja sama ini
+                    membantu negara-negara di kawasan mengatasi masalah
+                    pencemaran yang dapat melintasi batas negara.
+                </p>
+
+                <span class="ks-year">Periode program: 2021–2025</span>
+            </div>
+
+            <div class="ks-regional-image">
+                <img src="jagalaut.jpg"
+                     alt="Kerja sama ASEAN dalam mengatasi sampah laut">
+            </div>
+        </div>
+        <a href="#ks-pengantar" class="ks-back-guide">
+    ↑ Kembali ke Guide
+</a>
+    </div>
+
+
+    <!-- MULTILATERAL -->
+    <div class="ks-section ks-multilateral" id="ks-multilateral">
+        <div class="ks-section-heading">
+            <span>03 / MANY COUNTRIES</span>
+            <h2>Kerja Sama Multilateral</h2>
+            <p>
+                Kerja sama yang melibatkan banyak negara untuk membahas
+                dan mengatasi kepentingan atau permasalahan bersama.
+            </p>
+        </div>
+
+        <div class="ks-multi-card">
+            <div class="ks-multi-image">
+                <img src="UNEA.jpg"
+                     alt="Pertemuan United Nations Environment Assembly">
+            </div>
+
+            <div class="ks-multi-content">
+                <span class="ks-tag">UNITED NATIONS ENVIRONMENT ASSEMBLY</span>
+                <h3>UNEA: Forum Kerja Sama Lingkungan Dunia</h3>
+                <p>
+                    United Nations Environment Assembly (UNEA) merupakan
+                    forum pengambilan keputusan tingkat dunia di bidang
+                    lingkungan yang melibatkan negara-negara anggota PBB.
+                </p>
+
+                <h4>Contoh kegiatan</h4>
+                <p>
+                    Pada UNEA-6 yang berlangsung pada 26 Februari–1 Maret
+                    2024, negara-negara anggota menyepakati 15 resolusi
+                    untuk mendorong tindakan bersama dalam menghadapi
+                    perubahan iklim, hilangnya keanekaragaman hayati,
+                    serta polusi dan limbah.
+                </p>
+
+                <h4>Keterlibatan Indonesia</h4>
+                <p>
+                    Indonesia mendukung pembahasan dan upaya global untuk
+                    mengatasi pencemaran plastik. Indonesia juga terlibat
+                    dalam proses pembahasan kebijakan lingkungan bersama
+                    negara-negara lain.
+                </p>
+
+                <h4>Hubungan dengan SDG 12</h4>
+                <p>
+                    Kerja sama ini mendorong pengelolaan sampah dan limbah
+                    yang lebih baik serta penggunaan sumber daya secara
+                    bertanggung jawab.
+                </p>
+            </div>
+        </div>
+        <a href="#ks-pengantar" class="ks-back-guide">
+    ↑ Kembali ke Guide
+</a>
+    </div>
+
+
+    <!-- INTERNASIONAL -->
+    <div class="ks-section ks-internasional" id="ks-internasional">
+        <div class="ks-section-heading">
+            <span>04 / GLOBAL PARTNERSHIP</span>
+            <h2>Kerja Sama Internasional</h2>
+            <p>
+                Hubungan dan kerja sama lintas negara dalam berbagai bidang
+                untuk mencapai kepentingan bersama. Istilah ini bersifat
+                luas dan dapat mencakup kerja sama bilateral, regional,
+                maupun multilateral.
+            </p>
+        </div>
+
+        <div class="ks-un-layout">
+            <div class="ks-un-image">
+                <img src="PBB.jpg"
+                     alt="Perserikatan Bangsa-Bangsa">
+            </div>
+
+            <div class="ks-un-content">
+                <span class="ks-tag">INDONESIA × UNITED NATIONS</span>
+                <h3>Indonesia–UN Sustainable Development Cooperation Framework 2026–2030</h3>
+
+                <p>
+                    Indonesia bekerja sama dengan Perserikatan
+                    Bangsa-Bangsa (PBB) melalui kerangka kerja sama
+                    pembangunan berkelanjutan untuk mendukung pencapaian
+                    SDGs dan prioritas pembangunan Indonesia.
+                </p>
+
+                <h4>Pihak yang terlibat</h4>
+                <p>
+                    Pemerintah Indonesia dan United Nations Country Team
+                    atau Tim PBB di Indonesia.
+                </p>
+
+                <h4>Tujuan dan manfaat</h4>
+                <p>
+                    Kerangka kerja sama ini menyatukan keahlian, sumber daya,
+                    dan kemitraan PBB untuk mendukung pembangunan Indonesia.
+                    Kerja sama ini juga membuka peluang dukungan pengetahuan,
+                    pendanaan, dan kemitraan untuk mencapai berbagai tujuan
+                    pembangunan berkelanjutan.
+                </p>
+
+                <span class="ks-year">Periode: 2026–2030</span>
+            </div>
+        </div>
+        <a href="#ks-pengantar" class="ks-back-guide">
+    ↑ Kembali ke Guide
+</a>
+    </div>
+
+
+    <!-- PERAN INDONESIA -->
+    <div class="ks-section ks-peran" id="ks-peran">
+        <div class="ks-section-heading">
+            <span>05 / INDONESIA'S CONTRIBUTION</span>
+            <h2>Peran Indonesia dalam Kerja Sama</h2>
+            <p>
+                Indonesia tidak hanya menjadi peserta, tetapi juga ikut
+                berkontribusi dalam upaya menjaga lingkungan.
+            </p>
+        </div>
+
+        <div class="ks-role-layout">
+            <div class="ks-role-card">
+                <span>01</span>
+                <h3>Mengikuti Kesepakatan</h3>
+                <p>
+                    Indonesia ikut dalam pembahasan dan kesepakatan
+                    lingkungan bersama negara lain.
+                </p>
+            </div>
+
+            <div class="ks-role-card">
+                <span>02</span>
+                <h3>Berbagi Pengetahuan</h3>
+                <p>
+                    Indonesia bertukar informasi, pengalaman, dan
+                    pengetahuan untuk mengatasi masalah sampah.
+                </p>
+            </div>
+
+            <div class="ks-role-card">
+                <span>03</span>
+                <h3>Mendorong Kebijakan</h3>
+                <p>
+                    Indonesia ikut menyampaikan pendapat dan mendukung
+                    kebijakan untuk mengurangi pencemaran lingkungan.
+                </p>
+            </div>
+        </div>
+
+        <div class="ks-action-image">
+            <img src="pilahsampah.jpg"
+                 alt="Kegiatan pengelolaan sampah dan menjaga lingkungan">
+        </div>
+
+        <div class="ks-closing">
+            <span>SMALL ACTION, BIG IMPACT</span>
+            <h3>Menjaga lingkungan adalah tanggung jawab bersama.</h3>
+            <p>
+                Kerja sama antarnegara dapat membantu mengatasi masalah
+                lingkungan, tetapi perubahan juga dimulai dari kebiasaan
+                kita sehari-hari.
+            </p>
+        </div>
+        <a href="#ks-pengantar" class="ks-back-guide">
+    ↑ Kembali ke Guide
+</a>
+    </div>
+
+</section>
+
+      <section id="tentang saya" class="page" hidden>
+
+    <!-- BAGIAN BIODATA -->
+    <div class="biodata-section">
+        <h1>BIODATA DIRI</h1>
+
+        <div class="biodata-container">
+            <img src="itsme.jpeg" alt="Foto" class="foto">
+
+            <div class="info">
+                <p><strong>Nama Lengkap:</strong> Kaylie Scarlet Lim</p>
+                <p><strong>Tempat & Tanggal Lahir:</strong> Jakarta, 23 Mei 2026</p>
+                <p><strong>Zodiak:</strong> Gemini ♊</p>
+                <p><strong>Hobi:</strong> Menari, Nonton Anime, Baca Manga</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- BAGIAN CONTACT ME -->
+    <div class="contact-section">
+        <h1>CONTACT ME</h1>
+
+        <div class="contact-container">
+
+            <div class="contact-qr">
+                <img src="qrwa.jpeg" alt="QR WhatsApp">
+                <p>WhatsApp</p>
+            </div>
+
+            <div class="contact-qr">
+                <img src="qrig.jpeg" alt="QR Instagram">
+                <p>Instagram</p>
+            </div>
+
+            <div class="contact-qr">
+                <img src="qremail.png" alt="QR Email">
+                <p>Email</p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+        <!-- HALAMAN DAFTAR PUSTAKA -->
+        
+<section id="daftar-pustaka" class="page" hidden>
+
+    <div class="daftar-pustaka-page">
+
+        <!-- HEADER -->
+        <div class="dp-header">
+
+            <div class="dp-header-top">
+                <span class="dp-label">REFERENCES</span>
+                <i data-lucide="book-open"></i>
+            </div>
+
+            <h1>Daftar Pustaka</h1>
+
+            <p>
+                Kumpulan sumber informasi dan referensi yang digunakan
+                dalam pembuatan website ini.
+            </p>
+
+            <div class="dp-stat-container">
+
+                <div class="dp-stat">
+                    <i data-lucide="library"></i>
+                    <div>
+                        <h2>15</h2>
+                        <span>Sumber Referensi</span>
+                    </div>
+                </div>
+
+                <div class="dp-stat">
+                    <i data-lucide="globe"></i>
+                    <div>
+                        <h2>Online</h2>
+                        <span>Sumber Informasi</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- DAFTAR REFERENSI -->
+        <div class="dp-content">
+
+            <div class="dp-content-heading">
+                <div>
+                    <span class="dp-label">SOURCE COLLECTION</span>
+                    <h2>Semua Referensi</h2>
+                </div>
+
+                <span class="dp-total">15 Sumber</span>
+            </div>
+
+
+            <div class="dp-list">
+
+                <!-- 1 -->
+                <article class="dp-item">
+                    <span class="dp-number">01</span>
+                    <div class="dp-details">
+                        <span class="dp-author">ASEAN Secretariat</span>
+                        <h3>ASEAN Member States Adopt Regional Action Plan to Tackle Plastic Pollution.</h3>
+                        <p>2021. Diakses pada [tanggal akses] pukul [jam akses] WIB.</p>
+                        <a href="https://asean.org/asean-member-states-adopt-regional-action-plan-to-tackle-plastic-pollution/" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="external-link"></i>
+                            Buka sumber asli
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 2 -->
+                <article class="dp-item">
+                    <span class="dp-number">02</span>
+                    <div class="dp-details">
+                        <span class="dp-author">ASEAN Secretariat</span>
+                        <h3>ASEAN Regional Action Plan for Combating Marine Debris in the ASEAN Member States (2021–2025): Action Plan Summary.</h3>
+                        <p>2021. Diakses pada [tanggal akses] pukul [jam akses] WIB.</p>
+                        <a href="https://asean.org/wp-content/uploads/2021/09/FINAL_210524-ASEAN-RAP-Summary.pdf" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="external-link"></i>
+                            Buka sumber asli
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 3 -->
+                <article class="dp-item">
+                    <span class="dp-number">03</span>
+                    <div class="dp-details">
+                        <span class="dp-author">ASEAN Secretariat</span>
+                        <h3>ASEAN Regional Action Plan for Combating Marine Debris in the ASEAN Member States (2021–2025).</h3>
+                        <p>2021. Diakses pada [tanggal akses] pukul [jam akses] WIB.</p>
+                        <a href="https://asean.org/wp-content/uploads/FINAL_210524-ASEAN-Regional-Action-Plan_Ready-to-Publish_v2.pdf" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="external-link"></i>
+                            Buka sumber asli
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 4 -->
+                <article class="dp-item">
+                    <span class="dp-number">04</span>
+                    <div class="dp-details">
+                        <span class="dp-author">ASEAN Secretariat</span>
+                        <h3>Launch of the ASEAN Regional Action Plan for Combating Marine Debris in the ASEAN Member States (2021–2025).</h3>
+                        <p>2021. Diakses pada [tanggal akses] pukul [jam akses] WIB.</p>
+                        <a href="https://asean.org/launch-of-the-asean-regional-action-plan-for-combating-marine-debris-in-the-asean-member-states-2021-2025/" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="external-link"></i>
+                            Buka sumber asli
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 5 -->
+                <article class="dp-item">
+                    <span class="dp-number">05</span>
+                    <div class="dp-details">
+                        <span class="dp-author">Kementerian Perencanaan Pembangunan Nasional/Bappenas</span>
+                        <h3>SDGs Indonesia.</h3>
+                        <p>Tanpa tahun. Diakses pada [tanggal akses] pukul [jam akses] WIB.</p>
+                        <a href="https://sdgs.bappenas.go.id/" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="external-link"></i>
+                            Buka sumber asli
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 6 -->
+                <article class="dp-item">
+                    <span class="dp-number">06</span>
+                    <div class="dp-details">
+                        <span class="dp-author">Ministry of the Environment, Japan</span>
+                        <h3>Ministry of the Environment, Japan, and Ministry of Environment and Forestry of the Republic of Indonesia Hold Bilateral Meeting and Sign a Memorandum of Cooperation on Environmental Cooperation.</h3>
+                        <p>2022. Diakses pada [tanggal akses] pukul [jam akses] WIB.</p>
+                        <a href="https://www.env.go.jp/en/press/press_00449.html" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="external-link"></i>
+                            Buka sumber asli
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 7 -->
+                <article class="dp-item">
+                    <span class="dp-number">07</span>
+                    <div class="dp-details">
+                        <span class="dp-author">Ministry of the Environment, Japan</span>
+                        <h3>Results of The 2nd Indonesia-Japan Environment Week.</h3>
+                        <p>2026. Diakses pada [tanggal akses] pukul [jam akses] WIB.</p>
+                        <a href="https://www.env.go.jp/en/press/press_02042.html" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="external-link"></i>
+                            Buka sumber asli
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 8 -->
+                <article class="dp-item">
+                    <span class="dp-number">08</span>
+                    <div class="dp-details">
+                        <span class="dp-author">Ministry of the Environment, Japan</span>
+                        <h3>Japan-Indonesia Environmental Cooperation.</h3>
+                        <p>Tanpa tahun. Diakses pada [tanggal akses] pukul [jam akses] WIB.</p>
+                        <a href="https://www.env.go.jp/earth/coop/coop/english/dialogue/japan_indonesia.html" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="external-link"></i>
+                            Buka sumber asli
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 9 -->
+                <article class="dp-item">
+                    <span class="dp-number">09</span>
+                    <div class="dp-details">
+                        <span class="dp-author">Perserikatan Bangsa-Bangsa di Indonesia</span>
+                        <h3>Kerangka Kerja Sama Pembangunan Berkelanjutan Indonesia–Perserikatan Bangsa-Bangsa 2026–2030.</h3>
+                        <p>2025. Diakses pada [tanggal akses] pukul [jam akses] WIB.</p>
+                        <a href="https://indonesia.un.org/id/299620-kerangka-kerja-sama-pembangunan-berkelanjutan-indonesia%E2%80%93perserikatan-bangsa-bangsa-2026%E2%80%932030" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="external-link"></i>
+                            Buka sumber asli
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 10 -->
+                <article class="dp-item">
+                    <span class="dp-number">10</span>
+                    <div class="dp-details">
+                        <span class="dp-author">Perserikatan Bangsa-Bangsa di Indonesia</span>
+                        <h3>Tujuan Pembangunan Berkelanjutan.</h3>
+                        <p>Tanpa tahun. Diakses pada [tanggal akses] pukul [jam akses] WIB.</p>
+                        <a href="https://indonesia.un.org/id/sdgs" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="external-link"></i>
+                            Buka sumber asli
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 11 -->
+                <article class="dp-item">
+                    <span class="dp-number">11</span>
+                    <div class="dp-details">
+                        <span class="dp-author">United Nations</span>
+                        <h3>Goal 12: Ensure Sustainable Consumption and Production Patterns.</h3>
+                        <p>Tanpa tahun. Diakses pada [tanggal akses] pukul [jam akses] WIB.</p>
+                        <a href="https://sdgs.un.org/goals/goal12" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="external-link"></i>
+                            Buka sumber asli
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 12 -->
+                <article class="dp-item">
+                    <span class="dp-number">12</span>
+                    <div class="dp-details">
+                        <span class="dp-author">United Nations</span>
+                        <h3>The 17 Goals.</h3>
+                        <p>Tanpa tahun. Diakses pada [tanggal akses] pukul [jam akses] WIB.</p>
+                        <a href="https://sdgs.un.org/goals" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="external-link"></i>
+                            Buka sumber asli
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 13 -->
+                <article class="dp-item">
+                    <span class="dp-number">13</span>
+                    <div class="dp-details">
+                        <span class="dp-author">United Nations Development Programme</span>
+                        <h3>Sustainable Development Goals.</h3>
+                        <p>Tanpa tahun. Diakses pada [tanggal akses] pukul [jam akses] WIB.</p>
+                        <a href="https://www.undp.org/sustainable-development-goals" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="external-link"></i>
+                            Buka sumber asli
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 14 -->
+                <article class="dp-item">
+                    <span class="dp-number">14</span>
+                    <div class="dp-details">
+                        <span class="dp-author">United Nations Environment Programme</span>
+                        <h3>UN Environment Assembly Advances Collaborative Action on Triple Planetary Crisis.</h3>
+                        <p>2024. Diakses pada [tanggal akses] pukul [jam akses] WIB.</p>
+                        <a href="https://www.unep.org/en/news-and-stories/press-release/un-environment-assembly-advances-collaborative-action-triple" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="external-link"></i>
+                            Buka sumber asli
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 15 -->
+                <article class="dp-item">
+                    <span class="dp-number">15</span>
+                    <div class="dp-details">
+                        <span class="dp-author">United Nations Environment Programme</span>
+                        <h3>Sixth Session of the United Nations Environment Assembly (UNEA-6).</h3>
+                        <p>Tanpa tahun. Diakses pada [tanggal akses] pukul [jam akses] WIB.</p>
+                        <a href="https://www.unep.org/environmentassembly/unea6" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="external-link"></i>
+                            Buka sumber asli
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER -->
+        <div class="dp-footer">
+            <i data-lucide="sprout"></i>
+            <span>SUSTAINABLE DEVELOPMENT GOALS</span>
+            <i data-lucide="sprout"></i>
+        </div>
+
+    </div>
+
+</section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <p>
+            © 2026 Building a Better World, Starting with Our Choices
+        </p>
+
+        <p>~ Kaylie IX - 2 / 23 ~</p>
+
+    </footer>
+
+
+
+    
+
+<!-- JAVASCRIPT -->
+<script>
+
+// ============================
+// NAVIGATOR
+// ============================
+
+function showPage(pageName, button, scrollTop = true) {
+    const pages = document.querySelectorAll(".page");
+
+    pages.forEach(page => {
+        page.hidden = true;
+    });
+
+    const selectedPage = document.getElementById(pageName);
+
+    if (!selectedPage) return;
+
+    selectedPage.hidden = false;
+
+    document.querySelectorAll(".topnav button").forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+    if (button) {
+        button.classList.add("active");
+    }
+
+    if (scrollTop) {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+}
+
+
+// ============================
+// DROPDOWN IPS
+// ============================
+
+function toggleIPSMenu(event) {
+    event.stopPropagation();
+
+    const button = event.currentTarget;
+    const dropdown = button.closest(".dropdown");
+    const ipsPage = document.getElementById("ips");
+
+    if (!dropdown || !ipsPage) return;
+
+    // Cek apakah halaman IPS sudah terbuka
+    const alreadyOpen = !ipsPage.hidden;
+
+    // Buka halaman IPS
+    // Jika sudah terbuka, jangan kembali ke atas
+    showPage("ips", button, !alreadyOpen);
+
+    // Buka atau tutup dropdown
+    dropdown.classList.toggle("open");
+}
+
+
+// ============================
+// NAVIGASI LANGSUNG KE BAGIAN IPS
+// ============================
+
+function scrollIPS(sectionId, event) {
+    if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+
+    const dropdown = document.querySelector(".dropdown");
+
+    // Pastikan halaman IPS terbuka tanpa scroll ke atas
+    showPage("ips", document.querySelector(".dropbtn"), false);
+
+    // Tutup dropdown setelah bagian dipilih
+    if (dropdown) {
+        dropdown.classList.remove("open");
+    }
+
+    // Scroll langsung ke bagian yang dipilih
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            const target = document.getElementById(sectionId);
+
+            if (target) {
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
+        });
+    });
+}
+
+
+// ============================
+// INFINITE SDG CAROUSEL
+// ============================
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    const carousel = document.querySelector(".sdg-goals-container");
+
+    if (!carousel) return;
+
+    // Ambil 17 card asli
+    const originalCards = Array.from(carousel.children);
+    const totalCards = originalCards.length;
+
+    if (totalCards === 0) return;
+
+    // Buat salinan card di awal
+    const startClones = originalCards.map(function(card) {
+        return card.cloneNode(true);
+    });
+
+    startClones.reverse().forEach(function(card) {
+        carousel.insertBefore(card, carousel.firstChild);
+    });
+
+    // Buat salinan card di akhir
+    originalCards.forEach(function(card) {
+        carousel.appendChild(card.cloneNode(true));
+    });
+
+    // Hitung lebar satu kelompok card
+    function calculateSetWidth() {
+        const firstClone = carousel.children[0];
+        const firstOriginal = carousel.children[totalCards];
+
+        return firstOriginal.getBoundingClientRect().left
+            - firstClone.getBoundingClientRect().left;
+    }
+
+    // Pindah ke kelompok card asli
+    function setStartingPosition() {
+        carousel.style.scrollBehavior = "auto";
+
+        const setWidth = calculateSetWidth();
+
+        carousel.scrollLeft = setWidth;
+
+        carousel.style.scrollBehavior = "smooth";
+    }
+
+    requestAnimationFrame(function() {
+        setStartingPosition();
+    });
+
+    // Infinite scroll
+    let isMoving = false;
+
+    carousel.addEventListener("scroll", function() {
+
+        if (isMoving) return;
+
+        const setWidth = calculateSetWidth();
+
+        if (carousel.scrollLeft < setWidth) {
+
+            isMoving = true;
+            carousel.style.scrollBehavior = "auto";
+            carousel.scrollLeft += setWidth;
+
+        }
+
+        else if (carousel.scrollLeft >= setWidth * 2) {
+
+            isMoving = true;
+            carousel.style.scrollBehavior = "auto";
+            carousel.scrollLeft -= setWidth;
+
+        }
+
+        if (isMoving) {
+
+            requestAnimationFrame(function() {
+                carousel.style.scrollBehavior = "smooth";
+                isMoving = false;
+            });
+
+        }
+
+    });
+
+});
+
+
+// ============================
+// SDG 5 TABLE HOVER
+// ============================
+
+const table = document.querySelector(".sdg5-table");
+
+if (table) {
+
+    const rows = table.querySelectorAll("tbody tr");
+
+    rows.forEach((row, rowIndex) => {
+
+        row.querySelectorAll("td").forEach(cell => {
+
+            cell.addEventListener("mouseenter", () => {
+
+                const cellIndex = Array.from(row.children).indexOf(cell);
+
+                rows.forEach((otherRow, otherIndex) => {
+
+                    const cells = Array.from(otherRow.children);
+
+                    if (otherIndex === rowIndex) {
+                        otherRow.classList.add("row-hover");
+                    }
+
+                    if (cells[cellIndex]) {
+                        cells[cellIndex].classList.add("col-hover");
+                    }
+
+                });
+
+            });
+
+            cell.addEventListener("mouseleave", () => {
+
+                rows.forEach(otherRow => {
+
+                    otherRow.classList.remove("row-hover");
+
+                    otherRow.querySelectorAll("td").forEach(td => {
+                        td.classList.remove("col-hover");
+                    });
+
+                });
+
+            });
+
+        });
+
+    });
+
+}
+
+
+// ============================
+// SDGs LIVE TIMER
+// ============================
+
+// Tanggal awal SDGs
+const sdgsStart = new Date(
+    "2015-09-25T00:00:00+07:00"
+).getTime();
+
+// Batas waktu sampai akhir tahun 2030
+const sdgsEnd = new Date(
+    "2031-01-01T00:00:00+07:00"
+).getTime();
+
+
+function updateSDGsTimer() {
+
+    const now = Date.now();
+
+    // Total waktu sejak SDGs dimulai
+    const elapsed = Math.max(0, now - sdgsStart);
+
+    const totalSeconds = Math.floor(elapsed / 1000);
+
+    // Menghitung seconds dan hours
+    const seconds = totalSeconds % 60;
+
+    const hours = Math.floor(totalSeconds / 3600) % 24;
+
+    // Menghitung years dan days
+    const startDate = new Date(sdgsStart);
+    const currentDate = new Date(now);
+
+    let years = currentDate.getFullYear() -
+                startDate.getFullYear();
+
+    let anniversary = new Date(
+        startDate.getFullYear() + years,
+        startDate.getMonth(),
+        startDate.getDate()
+    );
+
+    if (currentDate < anniversary) {
+        years--;
+    }
+
+    const lastAnniversary = new Date(
+        startDate.getFullYear() + years,
+        startDate.getMonth(),
+        startDate.getDate()
+    );
+
+    const days = Math.floor(
+        (currentDate - lastAnniversary) / 86400000
+    );
+
+    // Menampilkan angka ke HTML
+    document.getElementById("seconds").textContent =
+        String(seconds).padStart(2, "0");
+
+    document.getElementById("hours").textContent =
+        String(hours).padStart(2, "0");
+
+    document.getElementById("years").textContent =
+        years;
+
+    document.getElementById("days").textContent =
+        days;
+
+    // Menghitung progress menuju 2030
+    let progress = ((now - sdgsStart) /
+        (sdgsEnd - sdgsStart)) * 100;
+
+    progress = Math.max(0, Math.min(100, progress));
+
+    document.getElementById("progress-percent").textContent =
+        progress.toFixed(2) + "%";
+
+    document.getElementById("progress-fill").style.width =
+        progress + "%";
+
+    // Pesan progress
+    if (now >= sdgsEnd) {
+
+        document.getElementById("progress-caption").textContent =
+            "The 2030 deadline has arrived. Our work continues!";
+
+    } else {
+
+        document.getElementById("progress-caption").textContent =
+            "Every second counts. Every action matters.";
+
+    }
+
+}
+
+
+// Update saat halaman dibuka
+updateSDGsTimer();
+
+// Update setiap detik
+setInterval(updateSDGsTimer, 1000);
+
+
+const ipsRevealElements = document.querySelectorAll(
+  "#ips .ips-info-card, #ips .ips-small-card, #ips .ips-factor-card, #ips .ips-indicator-card, #ips .ips-step, #ips .ips-action-card"
+);
+
+ipsRevealElements.forEach((element) => {
+  element.classList.add("reveal");
+});
+
+const ipsObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+      ipsObserver.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.15
+});
+
+ipsRevealElements.forEach((element) => {
+  ipsObserver.observe(element);
+});
+
+function scrollSDG12(sectionId, event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    const button = document.getElementById("sdg12NavButton");
+
+    // Pindah ke halaman SDG 12
+    showPage("sdg12", button);
+
+    // Langsung menuju section tujuan
+    requestAnimationFrame(() => {
+        const target = document.getElementById(sectionId);
+
+        if (target) {
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    });
+}
+
+function selectSDG12Vote(card, choice) {
+
+    const voting = document.querySelector(".sdg12-voting");
+    const cards = document.querySelectorAll(".sdg12-vote-card");
+
+    // Hilangkan tanda pilihan sebelumnya
+    cards.forEach(item => {
+        item.classList.remove("selected");
+    });
+
+    // Tandai pilihan yang diklik
+    card.classList.add("selected");
+
+    // Tampilkan seluruh hasil voting
+    voting.classList.add("show-results");
+
+    // Nama pilihan
+    const choices = [
+        "Membeli Sesuai Kebutuhan",
+        "Menggunakan Kembali Barang",
+        "Mengurangi Plastik Sekali Pakai",
+        "Mengurangi Sisa Makanan"
+    ];
+
+    // Tampilkan pesan pilihan pengunjung
+    const feedback = document.getElementById("sdg12VoteFeedback");
+
+    feedback.innerHTML = `
+        <i data-lucide="check-circle-2"></i>
+        <span>
+            Kamu memilih: <strong>${choices[choice]}</strong>
+        </span>
+    `;
+
+    // Refresh ikon Lucide
+    if (typeof lucide !== "undefined") {
+        lucide.createIcons();
+    }
+}
+
+
+
+</script>
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script>
+    lucide.createIcons();
+</script>
+
+
+
+</body>
+</html>
