@@ -61,8 +61,8 @@
 
     <div class="dropdown-content">
 
-        <a href="#sdg12-pengenalan"
-           onclick="scrollSDG12('sdg12-pengenalan', event)">
+        <a href="#sdg12-banner"
+           onclick="scrollSDG12('sdg12-banner', event)">
             Mengenal SDG 12
         </a>
 
@@ -1315,7 +1315,7 @@
 <div class="sdg12-page">
 
     <!-- HERO -->
-    <section class="sdg12-hero" id="sdg12-pengenalan">
+    <section class="sdg12-hero" id="sdg12-banner">
         <div class="sdg12-hero-text">
             <span class="sdg12-label">SUSTAINABLE DEVELOPMENT GOALS • 12</span>
             <h1>Konsumsi dan Produksi yang Bertanggung Jawab</h1>
@@ -1324,7 +1324,7 @@
                 dan tidak membeli sesuatu hanya karena mengikuti tren.
                 Kebiasaan kecil ini bisa membantu menjaga lingkungan.
             </p>
-            <a href="#sdg12-masalah" class="sdg12-button">
+            <a href="#sdg12-pengenalan" class="sdg12-button">
                 Mulai Jelajahi <i data-lucide="arrow-down"></i>
             </a>
         </div>
@@ -1340,7 +1340,7 @@
 
 
     <!-- PENGENALAN -->
-    <section class="sdg12-intro">
+    <section class="sdg12-intro" id="sdg12-pengenalan">
         <div class="sdg12-section-heading">
             <span class="sdg12-label">01 • PENGENALAN</span>
             <h2>Kenapa SDG 12 Penting?</h2>
@@ -1572,43 +1572,43 @@
             </div>
 
             <div class="sdg12-check-panel">
-                <div class="sdg12-check-icon">
-                    <i data-lucide="shopping-cart"></i>
-                </div>
-                <h3>Sudah siap membeli?</h3>
-                <p>
-                    Coba periksa beberapa pertanyaan ini sebelum
-                    memutuskan untuk membeli barang.
-                </p>
+    <div class="sdg12-check-icon">
+        <i data-lucide="shopping-cart"></i>
+    </div>
 
-                <label class="sdg12-check">
-                    <input type="checkbox">
-                    <span>Apakah barang ini benar-benar aku butuhkan?</span>
-                </label>
+    <h3>Sudah siap membeli?</h3>
+    <p>
+        Coba periksa beberapa pertanyaan ini sebelum
+        memutuskan untuk membeli barang.
+    </p>
 
-                <label class="sdg12-check">
-                    <input type="checkbox">
-                    <span>Apakah aku akan menggunakannya dalam jangka panjang?</span>
-                </label>
+    <label class="sdg12-check">
+        <input type="checkbox">
+        <span>Apakah barang ini benar-benar aku butuhkan?</span>
+    </label>
 
-                <label class="sdg12-check">
-                    <input type="checkbox">
-                    <span>Apakah aku sudah memiliki barang yang serupa?</span>
-                </label>
+    <label class="sdg12-check">
+        <input type="checkbox">
+        <span>Apakah aku akan menggunakannya dalam jangka panjang?</span>
+    </label>
 
-                <label class="sdg12-check">
-                    <input type="checkbox">
-                    <span>Apakah harganya sesuai dengan anggaranku?</span>
-                </label>
+    <label class="sdg12-check">
+        <input type="checkbox">
+        <span>Apakah aku sudah memiliki barang yang serupa?</span>
+    </label>
 
-                <div class="sdg12-check-footer">
-                    <i data-lucide="lightbulb"></i>
-                    Tidak harus selalu membeli. Kadang, pilihan terbaik
-                    adalah menggunakan barang yang sudah kita punya.
-                </div>
-            </div>
+    <label class="sdg12-check">
+        <input type="checkbox">
+        <span>Apakah harganya sesuai dengan anggaranku?</span>
+    </label>
+
+    <div class="sdg12-check-footer" id="sdg12CheckFooter">
+        <i data-lucide="lightbulb"></i>
+        Tidak harus selalu membeli. Kadang, pilihan terbaik
+        adalah menggunakan barang yang sudah kita punya.
+    </div>
+</div>
         </div>
-
         <div class="sdg12-reuse">
             <img src="reuse.jpg" alt="Contoh penggunaan kembali barang">
             <div>
@@ -2338,6 +2338,24 @@
 
       <section id="tentang saya" class="page" hidden>
 
+        <!-- SDGs QUOTE -->
+<div class="sdg-quote">
+
+    <h2>
+        "We are the first generation that can end poverty
+        and the last generation to tackle climate change
+        before it is too late."
+    </h2>
+
+    <p class="sdg-quote-translation">
+        Kita adalah generasi pertama yang dapat mengakhiri
+        kemiskinan, sekaligus generasi terakhir yang masih
+        punya kesempatan untuk mengatasi perubahan iklim.
+    </p>
+
+    <span class="sdg-quote-author">— Ban Ki-moon</span>
+</div>
+
     <!-- BAGIAN BIODATA -->
     <div class="biodata-section">
         <h1>BIODATA DIRI</h1>
@@ -2798,97 +2816,98 @@ function scrollIPS(sectionId, event) {
 
 
 // ============================
-// INFINITE SDG CAROUSEL
+// INFINITE SDG CAROUSEL - FIXED
 // ============================
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
     const carousel = document.querySelector(".sdg-goals-container");
 
-    if (!carousel) return;
+    if (!carousel || carousel.dataset.infiniteReady === "true") return;
 
-    // Ambil 17 card asli
+    carousel.dataset.infiniteReady = "true";
+
     const originalCards = Array.from(carousel.children);
     const totalCards = originalCards.length;
 
     if (totalCards === 0) return;
 
     // Buat salinan card di awal
-    const startClones = originalCards.map(function(card) {
-        return card.cloneNode(true);
-    });
+    const startClones = originalCards.map(card => card.cloneNode(true));
 
-    startClones.reverse().forEach(function(card) {
+    startClones.reverse().forEach(card => {
         carousel.insertBefore(card, carousel.firstChild);
     });
 
     // Buat salinan card di akhir
-    originalCards.forEach(function(card) {
+    originalCards.forEach(card => {
         carousel.appendChild(card.cloneNode(true));
     });
+
+    let setWidth = 0;
+    let adjusting = false;
 
     // Hitung lebar satu kelompok card
     function calculateSetWidth() {
         const firstClone = carousel.children[0];
         const firstOriginal = carousel.children[totalCards];
 
-        return firstOriginal.getBoundingClientRect().left
-            - firstClone.getBoundingClientRect().left;
+        return firstOriginal.offsetLeft - firstClone.offsetLeft;
     }
 
-    // Pindah ke kelompok card asli
+    // Atur posisi awal
     function setStartingPosition() {
-        carousel.style.scrollBehavior = "auto";
-
-        const setWidth = calculateSetWidth();
+        setWidth = calculateSetWidth();
 
         carousel.scrollLeft = setWidth;
-
-        carousel.style.scrollBehavior = "smooth";
     }
 
-    requestAnimationFrame(function() {
+    requestAnimationFrame(() => {
         setStartingPosition();
     });
 
-    // Infinite scroll
-    let isMoving = false;
+    // Infinite scrolling
+    carousel.addEventListener("scroll", function () {
 
-    carousel.addEventListener("scroll", function() {
+        if (adjusting || !setWidth) return;
 
-        if (isMoving) return;
+        const currentPosition = carousel.scrollLeft;
+        let newPosition = currentPosition;
 
-        const setWidth = calculateSetWidth();
-
-        if (carousel.scrollLeft < setWidth) {
-
-            isMoving = true;
-            carousel.style.scrollBehavior = "auto";
-            carousel.scrollLeft += setWidth;
-
+        // Jika sampai di bagian awal
+        if (currentPosition < setWidth * 0.5) {
+            newPosition = currentPosition + setWidth;
         }
 
-        else if (carousel.scrollLeft >= setWidth * 2) {
-
-            isMoving = true;
-            carousel.style.scrollBehavior = "auto";
-            carousel.scrollLeft -= setWidth;
-
+        // Jika sampai di bagian akhir
+        else if (currentPosition > setWidth * 1.5) {
+            newPosition = currentPosition - setWidth;
         }
 
-        if (isMoving) {
+        // Pindahkan posisi tanpa animasi
+        if (newPosition !== currentPosition) {
 
-            requestAnimationFrame(function() {
-                carousel.style.scrollBehavior = "smooth";
-                isMoving = false;
+            adjusting = true;
+            carousel.scrollLeft = newPosition;
+
+            requestAnimationFrame(() => {
+                adjusting = false;
             });
-
         }
+
+    }, { passive: true });
+
+    // Sesuaikan posisi saat ukuran layar berubah
+    window.addEventListener("resize", function () {
+
+        requestAnimationFrame(() => {
+            setWidth = calculateSetWidth();
+            carousel.scrollLeft = setWidth;
+        });
 
     });
 
 });
-
 
 // ============================
 // SDG 5 TABLE HOVER
@@ -3134,7 +3153,29 @@ function selectSDG12Vote(card, choice) {
     }
 }
 
+const checkPanel = document.querySelector(".sdg12-check-panel");
 
+if (checkPanel) {
+    const checkboxes = checkPanel.querySelectorAll(
+        'input[type="checkbox"]'
+    );
+
+    const footer = document.getElementById("sdg12CheckFooter");
+
+    checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", () => {
+            const selected = checkPanel.querySelectorAll(
+                'input[type="checkbox"]:checked'
+            ).length;
+
+            if (selected >= 3) {
+                footer.classList.add("show");
+            } else {
+                footer.classList.remove("show");
+            }
+        });
+    });
+}
 
 </script>
 <script src="https://unpkg.com/lucide@latest"></script>
